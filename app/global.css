@@ -1,0 +1,1820 @@
+/** @import must precede all other statements */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Sequel Sans Book";
+  src: url("/assets/font/Sequel Sans OTF/Sequel Sans Book Body.woff2")
+    format("woff2");
+  font-display: swap;
+  ascent-override: 92%;
+  descent-override: 14%;
+  size-adjust: 98%;
+}
+
+@font-face {
+  font-family: "Sequel Sans Medium";
+  src: url("/assets/font/Sequel Sans OTF/Sequel Sans Medium Disp.woff2")
+    format("woff2");
+  font-display: swap;
+  ascent-override: 92%;
+  descent-override: 14%;
+  line-gap-override: 0%;
+  size-adjust: 98%;
+}
+
+@font-face {
+  font-family: "Sequel Sans Random Display";
+  src: url("/assets/font/Sequel Sans OTF/Sequel Sans Roman Disp.woff2")
+    format("woff2");
+  font-display: swap;
+  ascent-override: 92%;
+  descent-override: 14%;
+  line-gap-override: 0%;
+  size-adjust: 98%;
+}
+
+@font-face {
+  font-family: "Sequel Sans Roman Display";
+  src: url("/assets/font/Sequel Sans OTF/Sequel Sans Roman Disp.woff2")
+    format("woff2");
+  font-display: swap;
+  ascent-override: 92%;
+  descent-override: 14%;
+  line-gap-override: 0%;
+  size-adjust: 98%;
+}
+
+@font-face {
+  font-family: "Sequel Sans Light Display";
+  src: url("/assets/font/Sequel Sans OTF/Sequel Sans Light Disp.woff2")
+    format("woff2");
+  font-display: swap;
+  ascent-override: 92%;
+  descent-override: 14%;
+  line-gap-override: 0%;
+  size-adjust: 98%;
+}
+@font-face {
+  font-family: "Sequel Sans Bold Display";
+  src: url("/assets/font/Sequel Sans OTF/Sequel Sans Bold Disp.otf")
+    format("opentype");
+  font-display: swap;
+  ascent-override: 92%;
+  descent-override: 14%;
+  line-gap-override: 0%;
+  size-adjust: 98%;
+}
+
+@font-face {
+  font-family: "Sequel Sans Bold Head";
+  src: url("/assets/font/Sequel Sans OTF/Sequel Sans Bold Head.woff2")
+    format("woff2");
+  font-display: swap;
+  ascent-override: 92%;
+  descent-override: 14%;
+  line-gap-override: 0%;
+  size-adjust: 98%;
+}
+
+@font-face {
+  font-family: "Sequel Sans Book Head";
+  src: url("/assets/font/Sequel Sans OTF/Sequel Sans Book Head.woff2")
+    format("woff2");
+  font-display: swap;
+  ascent-override: 92%;
+  descent-override: 14%;
+  line-gap-override: 0%;
+  size-adjust: 98%;
+}
+
+@font-face {
+  font-family: "Sequel Sans Book Display";
+  src: url("/assets/font/Sequel Sans OTF/Sequel Sans Book Disp.woff2")
+    format("woff2");
+  font-display: swap;
+  ascent-override: 92%;
+  descent-override: 14%;
+  line-gap-override: 0%;
+  size-adjust: 98%;
+}
+
+@font-face {
+  font-family: "Sequel Sans Medium Head";
+  src: url("/assets/font/Sequel Sans OTF/Sequel Sans Medium Head.woff2")
+    format("woff2");
+  font-display: swap;
+  ascent-override: 92%;
+  descent-override: 14%;
+  line-gap-override: 0%;
+  size-adjust: 98%;
+}
+@font-face {
+  font-family: "Sequel Sans Semi Bold Disp";
+  src: url("/assets/font/Sequel Sans OTF/Sequel Sans Semi Bold Disp.otf")
+    format("opentype");
+  font-display: swap;
+  ascent-override: 92%;
+  descent-override: 14%;
+  line-gap-override: 0%;
+  size-adjust: 98%;
+}
+
+html,
+body,
+svg,
+path,
+rect {
+  -webkit-text-fill-color: initial;
+  -webkit-font-smoothing: antialiased;
+  color-adjust: exact;
+  -webkit-color-adjust: exact;
+}
+@layer base {
+  /**
+   * Tailwind CSS theme
+   */
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+    --font-family-sequel-sans-book: "Sequel Sans Book", sans-serif;
+    --font-family-sequel-sans-book-display: "Sequel Sans Book Display";
+    --font-family-sequel-sans-medium: "Sequel Sans Medium", sans-serif;
+    --font-family-sequel-sans-random-display: "Sequel Sans Random Display";
+    --font-family-sequel-sans-roman-display: "Sequel Sans Roman Display";
+    --font-family-sequel-sans-light-display: "Sequel Sans Light Display";
+    --font-family-sequel-sans-bold-head: "Sequel Sans Bold Head", sans-serif;
+    --font-family-sequel-sans-book-head: "Sequel Sans Book Head", sans-serif;
+    --font-family-sequel-sans-medium-head: "Sequel Sans Medium Head", sans-serif;
+    --font-family-sequel-sans-bold-display: "Sequel Sans Bold Display";
+    --font-family-sequel-sans-semi-bold-display: "Sequel Sans Semi Bold Disp";
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  :where(p, span, li, h1, h2, h3, h4, h5, h6, a, button, label, td, th) {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  pre,
+  code {
+    overflow-x: auto;
+    white-space: pre;
+  }
+}
+
+.nav-links-in-inventory-management {
+  font-family: var(--font-family-sequel-sans-medium);
+  font-weight: 415;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0%;
+  cursor: pointer;
+}
+
+.nav-links-in-inventory-management:hover {
+  background: #e6e0ed;
+}
+
+.nav-links-in-inventory-management-get-in-touch {
+  font-family: var(--font-family-sequel-sans-bold-display);
+  font-weight: 425;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  letter-spacing: 0%;
+  cursor: pointer;
+}
+
+.button {
+  cursor: pointer;
+  position: relative;
+  color: #f5f9f5;
+  background: #772bf2;
+  border-radius: 2.125rem;
+  overflow: hidden;
+  height: 56px;
+  z-index: 0;
+}
+
+.button:hover {
+  background: #f5f9f5;
+}
+
+.button:hover span {
+  position: relative;
+  z-index: 2; /* keep text above animation */
+  color: #0a0f0a;
+}
+
+.button::after {
+  content: "";
+  background: #f5f9f5;
+  border: 2px solid #0a0f0a;
+  border-radius: 2.125rem;
+  color: #0a0f0a;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  clip-path: circle(0% at 50% 100%);
+  transition: all cubic-bezier(0, 0.96, 0.58, 1.1) 0.8s;
+  z-index: 1; /* visible */
+}
+
+.button:hover::after {
+  clip-path: circle(150% at 50% 100%);
+  transition: all cubic-bezier(0, 0.96, 0.58, 1.1) 3s;
+}
+.button2 {
+  border: 2px solid #0a0f0a;
+  cursor: pointer;
+  position: relative;
+  color: #0a0f0a;
+  background: #f5f9f5;
+  border-radius: 2.125rem;
+  overflow: hidden;
+  height: 56px;
+  z-index: 0;
+  transition: all cubic-bezier(0, 0.96, 0.58, 1.1) 0.3s;
+}
+
+.button2:hover {
+  border: 2px solid #772bf2;
+  background: #772bf2;
+}
+
+.button2:hover span {
+  position: relative;
+  z-index: 2; /* keep text above animation */
+  color: #f5f9f5;
+}
+
+.button2::after {
+  content: "";
+  background: #772bf2;
+  border: none;
+  border-radius: 2.125rem;
+  color: #0a0f0a;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  clip-path: circle(0% at 50% 100%);
+  transition: all cubic-bezier(0, 0.96, 0.58, 1.1) 0.8s;
+  z-index: 1; /* visible */
+  border: 2px solid #772bf2;
+}
+
+.button2:hover::after {
+  clip-path: circle(150% at 50% 100%);
+  transition: all cubic-bezier(0, 0.96, 0.58, 1.1) 3s;
+}
+.white-border-remover-in-inventory-management::after {
+  border: none !important;
+}
+.white-border-remover-in-inventory-management {
+  border: 2px solid #f5f9f5;
+  font-family: var(--font-family-sequel-sans-bold-display) !important;
+  font-weight: 425 !important;
+
+  transition: all cubic-bezier(0, 0.96, 0.58, 1.1) 0.3s;
+}
+.white-border-remover-in-inventory-management:hover,
+.white-border-remover-in-inventory-management:hover::after {
+  border: 2px solid #f5f9f5;
+}
+
+.black-border-remover-in-inventory-management {
+  border: 2px solid #f5f9f5 !important;
+  font-family: var(--font-family-sequel-sans-bold-display) !important;
+  font-weight: 425 !important;
+}
+
+.circle-button {
+  cursor: pointer;
+  position: relative;
+  color: #f5f9f5;
+  background: #f5f9f5;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 0;
+  border: 1.5px solid #0a0f0a;
+}
+
+/* Reveal Animation Layer */
+.circle-button::after {
+  content: "";
+  background: #772bf2;
+  position: absolute;
+  inset: 0;
+  clip-path: circle(0% at 50% 100%);
+  transition: all cubic-bezier(0, 0.96, 0.58, 1.1) 0.8s;
+  z-index: 1;
+}
+
+/* Hover expands circle */
+.circle-button:hover::after {
+  clip-path: circle(200% at 50% 100%);
+  transition: all cubic-bezier(0, 0.96, 0.58, 1.1) 2s;
+}
+
+/* SVG stays above animation */
+.circle-button svg {
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s ease;
+  color: #0a0f0a;
+}
+
+/* SVG becomes white */
+.circle-button:hover svg {
+  color: white;
+}
+.circle-button:hover svg path {
+  fill: white;
+}
+
+.social-icon-hover {
+  transition: color 0.3s ease;
+}
+
+.social-icon-hover svg rect,
+.social-icon-hover svg path {
+  transition: all 0.3s ease;
+}
+
+/* 🔥 HOVER EFFECT */
+.social-icon-hover:hover {
+  color: #8b4dff; /* Purple text */
+}
+
+.social-icon-hover:hover svg rect {
+  stroke: #8b4dff; /* Purple border */
+  fill: #8b4dff; /* Purple background */
+}
+
+.social-icon-hover:hover svg path {
+  fill: #ffffff; /* White LinkedIn icon */
+}
+
+.heading-section-title-in-inventory-management {
+  font-family: var(--font-family-sequel-sans-semi-bold-display);
+  font-weight: 420;
+  font-size: 5.25rem;
+  line-height: 6.5rem;
+  letter-spacing: -2%;
+  text-align: center;
+}
+
+.subtext-section-title-in-inventory-management {
+  font-family: var(--font-family-sequel-sans-random-display);
+  font-weight: 410;
+  font-size: 1.25rem;
+  line-height: 140%;
+  letter-spacing: 0%;
+  color: #0a0f0a;
+}
+
+.trust-indecation-in-inventory-management {
+  font-family: var(--font-family-sequel-sans-medium);
+  font-weight: 415;
+  font-size: 1.5rem;
+  line-height: 140%;
+  letter-spacing: 0%;
+}
+
+.spradesheet-usage-text-in-inventory-management {
+  font-family: var(--font-family-sequel-sans-semi-bold-display) !important;
+  font-weight: 420 !important;
+  font-size: 3.25rem !important;
+  line-height: 120% !important;
+  letter-spacing: -2%;
+}
+
+.spradesheet-usage-subtext-in-inventory-management {
+  font-family: var(--font-family-sequel-sans-book-display);
+  font-weight: 405;
+  font-size: 1.125rem;
+  line-height: 1.8rem;
+  letter-spacing: 0%;
+  color: #0a0f0a;
+}
+
+.spradesheet-usage-card-title-text-in-inventory-management {
+  font-family: var(--font-family-sequel-sans-semi-bold-display);
+  font-weight: 420;
+  font-size: 1.125rem;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: #0a0f0a;
+}
+
+.spradesheet-usage-card-subtext-text-in-inventory-management {
+  font-family: var(--font-family-sequel-sans-book-display);
+  font-weight: 405;
+  font-size: 1rem; /* 16px */
+  line-height: 140%;
+  letter-spacing: 0%;
+  color: #0a0f0a;
+}
+
+.factory-floor-text-heading-in-inventory-management {
+  font-family: var(--font-family-sequel-sans-semi-bold-display);
+  font-weight: 420;
+  font-size: 3.25rem;
+  line-height: 120%;
+  letter-spacing: -2%;
+  text-align: center;
+}
+
+.system-usage-card-title-text-in-inventory-management {
+  font-family: var(--font-family-sequel-sans-semi-bold-display);
+  font-weight: 420;
+  font-size: 1.75rem;
+  line-height: 120%;
+  letter-spacing: -2%;
+  text-align: left;
+}
+
+.row-materials-tracking-heading-in-inventory-management {
+  font-family: var(--font-family-sequel-sans-medium);
+  font-weight: 415;
+  font-size: 1.125rem;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+
+.row-materials-tracking-subtext-text-in-inventory-management {
+  font-family: var(--font-family-sequel-sans-book-display);
+  font-weight: 405;
+  font-size: 1rem;
+  line-height: 140%;
+  letter-spacing: 0%;
+}
+
+.row-materials-options-tracking-heading-in-inventory-management {
+  font-family: var(--font-family-sequel-sans-book-display);
+  font-weight: 405;
+  font-size: 1.125rem;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+
+.how-it-works-subtext-text-in-inventory-management {
+  font-family: var(--font-family-sequel-sans-random-display);
+  font-weight: 410;
+  font-size: 1.25rem;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 1.5rem; /* 24px */
+}
+
+.cta-section-bullets-in-inventory-management span {
+  font-family: var(--font-family-sequel-sans-medium);
+  font-weight: 415;
+  font-size: 0.875rem; /* 14px */
+  line-height: 140%;
+  letter-spacing: 0%;
+  color: #f5f9f5;
+}
+
+.why-manufacturers-love-us-header-in-inventory-management {
+  font-family: var(--font-family-sequel-sans-semi-bold-display);
+  font-weight: 420;
+  font-size: 1.75rem;
+  line-height: 120%;
+  letter-spacing: -2%;
+}
+
+.why-manufacturers-love-us-subheader-in-inventory-management {
+  font-family: var(--font-family-sequel-sans-random-display);
+  font-weight: 410;
+  font-size: 1.125rem;
+  line-height: 140%;
+  letter-spacing: 0%;
+}
+
+.transformes-how-we-manage-production-subheader-in-inventory-management {
+  font-family: var(--font-family-sequel-sans-roman-display);
+  font-weight: 410;
+  font-size: 1.25rem;
+  line-height: 160%;
+  letter-spacing: 0%;
+}
+
+.slider-subheader-in-inventory-management {
+  font-family: var(--font-family-sequel-sans-random-display);
+  font-weight: 410;
+  font-size: 1.375rem;
+  line-height: 160%;
+  letter-spacing: 0%;
+}
+
+.slider-subheader-in-inventory-management span {
+  font-family: var(--font-family-sequel-sans-semi-bold-display);
+  font-weight: 420;
+}
+
+.plan-name-in-inventory-management {
+  font-family: var(--font-family-sequel-sans-book-display);
+  font-weight: 405;
+  font-size: 1.5rem;
+  line-height: 120%;
+  letter-spacing: -2%;
+}
+
+.plan-heading-in-inventory-management {
+  font-family: var(--font-family-sequel-sans-bold-display);
+  font-weight: 425;
+  font-size: 1.75rem;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+
+.plan-subheading-in-inventory-management {
+  font-family: var(--font-family-sequel-sans-book-display);
+  font-weight: 405;
+  font-size: 1.25rem;
+  line-height: 140%;
+  letter-spacing: 0%;
+}
+
+.subhading-ready-to-take-control-in-inventory-management {
+  font-family: var(--font-family-sequel-sans-book-display);
+  font-weight: 405;
+  font-size: 1.25rem;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.bullets-ready-to-take-control-in-inventory-management {
+  font-family: var(--font-family-sequel-sans-medium);
+  font-weight: 415;
+  font-size: 0.875rem;
+  line-height: 140%;
+  letter-spacing: 0%;
+}
+
+.footer-section-description-in-inventory-management {
+  font-family: var(--font-family-sequel-sans-book-display);
+  font-weight: 405;
+  font-size: 1.125rem;
+  line-height: 140%;
+  letter-spacing: 0%;
+}
+
+.footer-subtext-heading-in-inventory-management {
+  font-family: var(--font-family-sequel-sans-semi-bold-display);
+  font-weight: 420;
+  font-size: 1.25rem;
+  line-height: 120%;
+  letter-spacing: -2%;
+}
+
+.footer-subtext-subhading-in-inventory-management {
+  font-family: var(--font-family-sequel-sans-book-display);
+  font-weight: 405;
+  font-size: 1.125rem;
+  line-height: 120%;
+  letter-spacing: -2%;
+}
+
+.copyright-text-in-inventory-management {
+  font-family: var(--font-family-sequel-sans-book-display);
+  font-weight: 405;
+  font-size: 0.875rem;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+
+.hero-section-in-inventory-management {
+  background-image: url("/assets/Hero\ Section\ with\ low\ opacity\ grid.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.everything-you-need-text-in-inventory-management {
+  background-image: url("/assets/Key Features section.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.background-image-for-dashboard-image-in-inventory-management {
+  background-image: url("/assets/You make the products. Our system manages the process..webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.why-manufactures-love-us-in-inventory-management {
+  background-image: url("/assets/why manufacturing gradient background.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer-section-background-image-in-inventory-management {
+  background-image: url("/assets/Footer section.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ready-to-automate-your-factory-heading {
+  color: #0a0f0a;
+  text-align: center;
+  font-family: var(--font-family-sequel-sans-semi-bold-display);
+  font-size: 3.25rem;
+  font-style: normal;
+  font-weight: 420;
+  line-height: 120%;
+  letter-spacing: -1.04px;
+}
+
+.border-apply-in-inventory-management {
+  border: 2.5px solid #0a0f0a;
+}
+
+.border-apply-in-inventory-management:hover {
+  border: 2.5px solid #772bf2;
+  background-color: #772bf2;
+}
+
+.popup-section-left-content-heading {
+  color: #0a0f0a;
+  font-family: var(--font-family-sequel-sans-bold-display);
+  font-size: 1.5rem; /* 24px */
+  font-style: normal;
+  font-weight: 420;
+  line-height: 120%;
+}
+
+.popup-section-left-content-subtext {
+  color: #0a0f0a;
+  font-family: var(--font-family-sequel-sans-book-display);
+  font-size: 1.25rem; /* 20px */
+  font-style: normal;
+  font-weight: 405;
+  line-height: 120%;
+  letter-spacing: -0.4px;
+}
+
+.popup-section-right-content-subtext {
+  color: #0a0f0a;
+  font-family: var(--font-family-sequel-sans-book-display);
+  font-size: 1rem; /* 16px */
+  font-style: normal;
+  font-weight: 405;
+  line-height: 140%;
+}
+
+.popup-section-right-content-subtext-label {
+  color: #0a0f0a;
+  font-family: var(--font-family-sequel-sans-semi-bold-display);
+  font-size: 1rem; /* 16px */
+  font-style: normal;
+  font-weight: 415;
+  line-height: 140%;
+}
+
+.popup-section-right-content-subtext-input::placeholder {
+  color: rgba(10, 15, 10, 0.2);
+  font-family: var(--font-family-sequel-sans-book);
+  font-size: 1rem; /* 16px */
+  font-style: normal;
+  font-weight: 405;
+  line-height: 140%;
+}
+
+.success-massage-after-submiting-popup {
+  color: #0a0f0a;
+  font-family: var(--font-family-sequel-sans-semi-bold-display);
+  font-size: 1.25rem; /* 20px */
+  font-style: normal;
+  font-weight: 420;
+  line-height: 140%;
+}
+
+.underline-button {
+  position: relative;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.underline-button::after {
+  content: "";
+  background: #0a0f0a;
+  position: absolute;
+  bottom: -0.5rem;
+  height: 2px;
+  left: 0;
+  width: 0;
+  transition: all cubic-bezier(0.17, 0.54, 0.58, 1.1) 1s;
+}
+
+.underline-button:hover::after {
+  width: 100%;
+  transition: all cubic-bezier(0.17, 0.54, 0.58, 1.1) 1s;
+}
+
+.hero-section-in-inventory-management {
+  height: 100%;
+  min-height: fit-content;
+}
+
+.popup-section-left-content-item-in-inventory-management {
+  margin-bottom: 0;
+  padding-bottom: 32px;
+}
+
+.navigation-section-holder {
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  transition: transform 0.35s ease, opacity 0.35s ease;
+}
+
+/* When scrolling UP → show */
+.nav-show {
+  position: fixed;
+  top: 0;
+  transform: translateY(0);
+  opacity: 1;
+
+  background-color: #f5f9f5;
+}
+
+/* When scrolling DOWN → hide smoothly */
+.nav-hide {
+  position: absolute;
+  top: 0;
+  transform: translateY(0);
+  opacity: 100%;
+}
+
+@media (max-width: 767px) {
+  .heading-section-title-in-inventory-management {
+    font-size: 1.5rem; /* 24px */
+    line-height: 120%;
+    letter-spacing: 0px;
+  }
+
+  .underline-button::after {
+    display: none !important;
+  }
+
+  .border-apply-in-inventory-management:hover {
+    background: transparent;
+    border: 1.5px solid #0a0f0a;
+  }
+
+  /* SVG becomes white */
+  .circle-button:hover svg {
+    color: black;
+  }
+  .circle-button:hover svg path {
+    fill: black;
+  }
+
+  .mobile-position-of-absolute-container-buttons {
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    top: 100%;
+    transform: none;
+    justify-content: center;
+  }
+
+  .hero-section-parennt-in-inventory-management {
+    padding: 1rem;
+    padding-bottom: 0;
+  }
+
+  .hero-section-in-inventory-management {
+    height: 100%;
+    min-height: fit-content;
+  }
+
+  .in-mobile-not-visible {
+    display: none;
+  }
+
+  .button,
+  .button2 {
+    font-size: 0.875rem; /* 14px */
+    line-height: 1rem; /* 16px */
+    width: 100%;
+  }
+
+  .button-content-holder-in-inventory-management {
+    margin-bottom: 3.25rem; /* 52px */
+    gap: 0.5rem; /* 8px */
+  }
+
+  .button-content-holder-in-inventory-management button {
+    padding: 0.75rem 1rem; /* 12px 16px */
+  }
+
+  .subtext-section-title-in-inventory-management {
+    font-size: 0.875rem; /* 14px */
+    line-height: 140%;
+    margin-bottom: 1rem;
+  }
+  .button::after,
+  .button2::after {
+    clip-path: none !important;
+    transition: none !important;
+    background: transparent !important;
+    border: none !important;
+  }
+
+  .button:after {
+    background: #772bf2 !important;
+  }
+
+  .button2:after {
+    background: #f5f9f5 !important;
+  }
+
+  .black-border-remover-in-inventory-management {
+    border: none !important;
+  }
+
+  .button span,
+  .button2 span {
+    position: relative;
+    z-index: 2;
+  }
+
+  .button:hover::after,
+  .button2:hover::after {
+    clip-path: none !important;
+    transition: none !important;
+  }
+
+  /* Prevent text color changing on hover */
+  .button:hover,
+  .button2:hover {
+    background: inherit !important;
+    border-color: inherit !important;
+  }
+
+  .button:hover span,
+  .button2:hover span {
+    color: inherit !important;
+  }
+
+  .circle-button::after {
+    clip-path: none !important;
+    transition: none !important;
+    background: transparent !important;
+  }
+
+  .circle-button:hover::after {
+    clip-path: none !important;
+    transition: none !important;
+  }
+
+  .scroll-of-horizontal-in-inventory-management {
+    padding-inline: 0;
+  }
+
+  .horizontal-scroll-parent-in-inventory-management {
+    padding-block: 0;
+    padding-top: 2.625rem; /* 42px */
+  }
+
+  .trust-indecation-in-inventory-management {
+    margin-bottom: 1.5rem; /* 24px */
+    font-size: 1.25rem; /* 20px */
+    line-height: 140%;
+  }
+
+  .problem-section-parent-in-inventory-management {
+    padding-block: 4.375rem; /* 70px */
+  }
+
+  .problem-section-content-holder-in-inventory-management {
+    padding-inline: 1rem;
+  }
+
+  .spradesheet-usage-text-in-inventory-management {
+    font-size: 1.5rem !important; /* 24px */
+    line-height: 120% !important;
+    margin-bottom: 0.75rem; /* 12px */
+  }
+
+  .spradesheet-usage-subtext-in-inventory-management {
+    font-size: 1rem;
+    line-height: 140%;
+  }
+
+  .heading-and-subtext-content-holder-in-inventory-management {
+    gap: 0;
+    margin-bottom: 2rem;
+  }
+
+  .benfits-section-content-holder-in-inventory-management {
+    padding-inline: 1rem;
+  }
+
+  .everything-you-need-text-in-inventory-management {
+    padding-block: 3rem; /* 48px */
+  }
+
+  .factory-floor-text-heading-in-inventory-management {
+    font-size: 1.5rem; /* 24px */
+    line-height: 120%;
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .heading-content-holder-in-inventory-management {
+    margin-bottom: 2.5rem; /* 40px */
+  }
+
+  .productivity-card-content-holder-in-inventory-management {
+    padding: 1rem;
+  }
+  .system-usage-card-title-text-in-inventory-management {
+    font-size: 1.125rem; /* 18px */
+    line-height: 120%;
+    margin-bottom: 1rem;
+  }
+
+  .explore-more-in-features-section-in-inventory-management {
+    width: fit-content;
+  }
+  .video-section-parent-in-inventory-management {
+    padding-block: 4.375rem; /* 70px */
+  }
+
+  .video-section-content-holder-in-inventory-management {
+    padding-inline: 1rem;
+  }
+
+  .how-it-works-subtext-text-in-inventory-management {
+    font-size: 1.5rem; /* 24px */
+    line-height: 120%;
+  }
+
+  .video-section-subtext-text-in-inventory-management {
+    font-size: 1rem;
+    line-height: 140%;
+    margin-bottom: 1rem;
+  }
+
+  .video-section-button-in-inventory-management {
+    margin-bottom: 2.5rem !important; /* 40px */
+    width: fit-content;
+  }
+
+  .why-manufactures-love-us-in-inventory-management {
+    padding-block: 3rem; /* 48px */
+  }
+
+  .benefits-section-content-holder-in-inventory-management {
+    padding-inline: 1rem;
+  }
+
+  .why-manufacturers-love-us-header-in-inventory-management {
+    font-size: 1.5rem !important; /* 24px */
+    line-height: 120% !important;
+    margin-bottom: 2rem;
+  }
+
+  .background-image-for-dashboard-image-in-inventory-management {
+    padding-top: 0.8rem;
+    padding-left: 0.8rem;
+  }
+
+  .benifits-icon-in-inventory-management {
+    width: 5rem; /* 80px */
+    height: 5rem; /* 80px */
+    margin-bottom: 0.75rem; /* 12px */
+  }
+
+  .benifits-header-in-inventory-management {
+    font-size: 1.125rem; /* 18px */
+    line-height: 120%;
+    margin-bottom: 0.75rem; /* 12px */
+  }
+
+  .why-manufacturers-love-us-subheader-in-inventory-management {
+    font-size: 1rem;
+    line-height: 140%;
+  }
+
+  .benifits-card-in-inventory-management {
+    padding: 1.5rem; /* 24px */
+  }
+
+  .benifits-section-content-holder-in-inventory-management {
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .actionaable-insights-section-in-inventory-management {
+    gap: 1rem;
+  }
+
+  .testimonial-section-in-inventory-management {
+    padding-block: 4.375rem; /* 70px */
+    padding-bottom: 6.5rem;
+  }
+
+  .testimonial-section-content-holder-in-inventory-management {
+    padding-inline: 1rem;
+  }
+
+  .center-align-text {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .testimonial-header-in-inventory-management {
+    margin-bottom: 2.5rem; /* 40px */
+  }
+
+  .img-and-content-holder-in-testimonial-in-inventory-management {
+    gap: 1.25rem; /* 20px */
+  }
+
+  .testimonial-sub-header-in-inventory-management {
+    margin-bottom: 0.75rem; /* 12px */
+    font-size: 1.125rem; /* 18px */
+    line-height: 120%;
+  }
+
+  .transformes-how-we-manage-production-subheader-in-inventory-management {
+    font-size: 1rem;
+    line-height: 140%;
+    margin-bottom: 0.75rem; /* 12px */
+  }
+
+  .slider-subheader-in-inventory-management {
+    font-size: 1rem;
+    line-height: 160%;
+    margin-bottom: 1.25rem; /* 20px */
+  }
+  .icon-and-button-holder-in-testimonial-in-inventory-management {
+    flex-direction: column;
+    width: 100%;
+    justify-content: start;
+    align-items: start;
+    margin-bottom: 0;
+  }
+
+  .testimonial-button-holder-in-inventory-management {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .next-prev-button-in-inventory-management {
+    width: 2.75rem; /* 44px */
+    height: 2.75rem; /* 44px */
+  }
+
+  .next-prev-button-in-inventory-management svg {
+    width: 14px;
+  }
+  .next-prev-button-in-inventory-management:hover svg path {
+    fill: black;
+  }
+
+  .circle-button:hover svg path {
+    fill: #772bf2;
+  }
+
+  .play-button-in-video-in-inventory-management {
+    width: 2.75rem; /* 44px */
+    height: 2.75rem; /* 44px */
+  }
+
+  .play-button-in-video-in-inventory-management svg {
+    width: 14px;
+  }
+
+  .pricing-section-in-inventory-management {
+    padding-block: 4.375rem; /* 70px */
+    padding-top: 0;
+  }
+
+  .pricing-section-content-holder-in-inventory-management {
+    padding-inline: 1rem;
+  }
+
+  .pricing-section-subheading-in-inventory-management {
+    margin-bottom: 2rem; /* 32px */
+  }
+
+  .pricing-cards-holder-in-inventory-management {
+    padding: 1.5rem; /* 24px */
+  }
+
+  .plan-name-in-inventory-management {
+    font-size: 1.125rem; /* 18px */
+    line-height: 120%;
+    margin-bottom: 0.56rem; /* 9px */
+  }
+
+  .plan-heading-in-inventory-management {
+    font-size: 1.5rem !important; /* 24px */
+    line-height: 120% !important;
+    margin-bottom: 1rem; /* 16px */
+  }
+
+  .plan-subheading-in-inventory-management {
+    font-size: 1rem;
+    line-height: 140%;
+    margin-bottom: 1.5rem; /* 24px */
+  }
+
+  .cta-section-in-inventory-management {
+    margin-inline: 1rem;
+  }
+
+  .cta-section-title-in-inventory-management {
+    font-size: 1.5rem !important; /* 24px */
+    line-height: 120% !important;
+    margin-bottom: 1rem; /* 16px */
+  }
+  .subhading-ready-to-take-control-in-inventory-management {
+    font-size: 1rem;
+    line-height: 140%;
+    margin-bottom: 1.75rem; /* 28px */
+  }
+
+  .cta-section-content-in-inventory-management {
+    padding-inline: 0.7rem; /* 11px */
+  }
+
+  .cta-section-button-holder-in-inventory-management {
+    gap: 0.45rem; /* 7px */
+    margin-bottom: 1.5rem; /* 24px */
+  }
+
+  .cta-section-button-in-inventory-management {
+    padding: 0.75rem 1rem; /* 12px 16px */
+  }
+
+  .cta-section-bullets-in-inventory-management {
+    font-size: 0.75rem; /* 12px */
+    line-height: 140%;
+    align-items: start;
+    gap: 0.5rem; /* 8px */
+  }
+
+  .cta-section-bullets-in-inventory-management span {
+    text-align: left;
+  }
+
+  .cta-section-bullets-holder-in-inventory-management {
+    padding-inline: 2rem;
+  }
+
+  .footer-section-background-image-in-inventory-management {
+    padding-top: 16rem;
+    margin-top: -80%;
+  }
+
+  .footer-section-container-in-inventory-management {
+    padding-inline: 1rem;
+  }
+
+  .third-eye-logo-in-inventory-management img {
+    height: 7.1875rem; /* 115px */
+  }
+
+  .third-eye-logo-in-inventory-management {
+    margin-bottom: 0.3rem; /* 5px */
+  }
+
+  .footer-section-description-in-inventory-management {
+    font-size: 1rem; /* 16px */
+    line-height: 140%;
+    margin-bottom: 1.75rem; /* 28px */
+  }
+
+  .links-container-in-smart-inventory-management {
+    margin-bottom: 1rem; /* 17px */
+  }
+
+  .footer-subtext-heading-in-inventory-management {
+    margin-bottom: 1rem;
+  }
+
+  .footer-subtext-list-text-in-inventory-management {
+    margin-bottom: 0.75rem; /* 12px */
+  }
+
+  .links-container-in-smart-inventory-management-2 {
+    margin-bottom: 1.75rem; /* 28px */
+  }
+
+  .footer-social-links-container-in-inventory-management {
+    margin-bottom: 2.5rem; /* 40px */
+    flex-direction: column;
+  }
+
+  .footer-copyright-in-inventory-management {
+    padding-top: 1rem;
+  }
+
+  .popup-content-holder-in-inventory-management {
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding-inline: 1rem;
+    padding-block: 1rem;
+  }
+
+  .contact-and-form-holder-in-popup-invite-in-inventory-management {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* 24px */
+    width: 100%;
+  }
+
+  .ready-to-automate-your-factory-heading {
+    font-size: 1.5rem; /* 24px */
+    line-height: 120%;
+    text-align: left;
+  }
+
+  .popup-heading-container-in-inventory-management {
+    justify-content: start;
+  }
+
+  .popup-section-left-content-holder-in-inventory-management {
+    padding-top: 1.75rem; /* 28px */
+  }
+
+  .popup-section-close-button-in-inventory-management {
+    right: 0rem;
+    top: 2rem;
+  }
+
+  .popup-form-content-holder-in-inventory-management {
+    height: fit-content;
+  }
+
+  .popup-section-left-content-heading {
+    font-size: 1.25rem; /* 20px */
+    line-height: 120%;
+  }
+
+  .popup-section-left-content-subtext {
+    font-size: 1rem;
+    line-height: 120%;
+  }
+
+  .popup-section-left-content-item-in-inventory-management {
+    margin-bottom: 0;
+    padding-bottom: 32px;
+  }
+
+  .height-fixed-in-inventory-management-for-mobile {
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 899px) {
+  .mobile-position-of-absolute-container-buttons {
+    right: 30px;
+  }
+  .underline-button::after {
+    display: none !important;
+  }
+  .border-apply-in-inventory-management:hover {
+    background: transparent;
+    border: 1.5px solid #0a0f0a;
+  }
+
+  .button::after,
+  .button2::after {
+    clip-path: none !important;
+    transition: none !important;
+    background: transparent !important;
+    border: none !important;
+  }
+
+  .button:after {
+    background: #772bf2 !important;
+  }
+
+  .button2:after {
+    background: #f5f9f5 !important;
+  }
+
+  .black-border-remover-in-inventory-management {
+    border: none !important;
+  }
+
+  .button span,
+  .button2 span {
+    position: relative;
+    z-index: 2;
+  }
+
+  /* SVG becomes white */
+  .circle-button:hover svg {
+    color: black;
+  }
+  .circle-button:hover svg path {
+    fill: black;
+  }
+
+  .button:hover::after,
+  .button2:hover::after {
+    clip-path: none !important;
+    transition: none !important;
+  }
+
+  /* Prevent text color changing on hover */
+  .button:hover,
+  .button2:hover {
+    background: inherit !important;
+    border-color: inherit !important;
+  }
+
+  .button:hover span,
+  .button2:hover span {
+    color: inherit !important;
+  }
+
+  .circle-button::after {
+    clip-path: none !important;
+    transition: none !important;
+    background: transparent !important;
+  }
+
+  .circle-button:hover::after {
+    clip-path: none !important;
+    transition: none !important;
+  }
+  .navbar-section-in-inventory-management,
+  .problem-section-content-holder-in-inventory-management,
+  .benfits-section-content-holder-in-inventory-management,
+  .video-section-content-holder-in-inventory-management,
+  .benefits-section-content-holder-in-inventory-management,
+  .testimonial-section-content-holder-in-inventory-management,
+  .pricing-section-content-holder-in-inventory-management,
+  .footer-section-container-in-inventory-management {
+    padding-inline: 1.5rem;
+  }
+
+  .scroll-of-horizontal-in-inventory-management {
+    padding: 0;
+  }
+  .heading-section-title-in-inventory-management {
+    font-size: 3rem;
+    line-height: 120%;
+  }
+
+  .in-mobile-not-visible {
+    display: none;
+  }
+  .spradesheet-usage-text-in-inventory-management {
+    font-size: 2rem;
+    line-height: 120%;
+  }
+  .plan-heading-in-inventory-management,
+  .why-manufacturers-love-us-header-in-inventory-management {
+    font-size: 1.5rem;
+    line-height: 120%;
+  }
+
+  .contact-and-form-holder-in-popup-invite-in-inventory-management {
+    gap: 1rem;
+  }
+
+  .popup-content-holder-in-inventory-management {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-section-in-inventory-management {
+    height: 100%;
+    min-height: fit-content;
+  }
+  .cta-section-in-inventory-management {
+    margin-inline: 1.5rem;
+  }
+
+  .footer-social-links-container-in-inventory-management {
+    display: flex;
+    gap: 2rem;
+  }
+  .footer-social-links-container-in-inventory-management
+    .footer-section-logo-and-paragraph-holder {
+    width: 15.625rem; /* 250px */
+  }
+
+  .footer-subtext-subhading-in-inventory-management {
+    font-size: 0.875rem; /* 14px */
+    line-height: 140%;
+  }
+
+  .footer-section-description-in-inventory-management {
+    font-size: 1rem;
+    line-height: 140%;
+  }
+}
+/* Added (hover: none) and (pointer: coarse) 
+   This tells the browser: "Only do this if the user is using a touch screen 
+   and cannot hover with a mouse."
+*/
+
+@media only screen and (min-width: 1366px) and (max-height: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) and (pointer: coarse) {
+  .button::after,
+  .button2::after {
+    clip-path: none !important;
+    transition: none !important;
+    background: transparent !important;
+    border: none !important;
+  }
+
+  .underline-button::after {
+    display: none !important;
+  }
+
+  .border-apply-in-inventory-management:hover {
+    background: transparent;
+    border: 1.5px solid #0a0f0a;
+  }
+
+ 
+  .circle-button:hover svg {
+    color: black;
+  }
+
+  .circle-button:hover svg path {
+    fill: black;
+  }
+
+  .button:after {
+    background: #772bf2 !important;
+  }
+
+  .button2:after {
+    background: #f5f9f5 !important;
+  }
+
+  .black-border-remover-in-inventory-management {
+    border: none !important;
+  }
+
+  .button span,
+  .button2 span {
+    position: relative;
+    z-index: 2;
+  }
+
+  .button:hover::after,
+  .button2:hover::after {
+    clip-path: none !important;
+    transition: none !important;
+  }
+
+ 
+  .button:hover,
+  .button2:hover {
+    background: inherit !important;
+    border-color: inherit !important;
+  }
+
+  .button:hover span,
+  .button2:hover span {
+    color: inherit !important;
+  }
+
+  .circle-button::after {
+    clip-path: none !important;
+    transition: none !important;
+    background: transparent !important;
+  }
+
+  .circle-button:hover::after {
+    clip-path: none !important;
+    transition: none !important;
+  }
+}
+
+
+
+/* =========================================
+   TABLET-SPECIFIC OVERRIDES
+   Targeting: body.is-tablet (Server Detected)
+   ========================================= */
+
+/* 1. Reset Button Animations */
+body.is-tablet .button::after,
+body.is-tablet .button2::after {
+  clip-path: none !important;
+  transition: none !important;
+  background: transparent !important;
+  border: none !important;
+}
+
+body.is-tablet .underline-button::after {
+  display: none !important;
+}
+
+/* 2. Inventory Management Hovers */
+body.is-tablet .border-apply-in-inventory-management:hover {
+  background: transparent;
+  border: 1.5px solid #0a0f0a;
+}
+
+body.is-tablet .black-border-remover-in-inventory-management {
+  border: none !important;
+}
+
+/* 3. SVG & Icon Fixes */
+body.is-tablet .circle-button:hover svg {
+  color: black;
+}
+
+body.is-tablet .circle-button:hover svg path {
+  fill: black;
+}
+
+/* 4. Specific Button Background Colors */
+body.is-tablet .button:after {
+  background: #772bf2 !important;
+}
+
+body.is-tablet .button2:after {
+  background: #f5f9f5 !important;
+}
+
+/* 5. Text & Spans Z-Index */
+body.is-tablet .button span,
+body.is-tablet .button2 span {
+  position: relative;
+  z-index: 2;
+}
+
+/* 6. Disable Hover Transitions Completely */
+body.is-tablet .button:hover::after,
+body.is-tablet .button2:hover::after,
+body.is-tablet .circle-button:hover::after {
+  clip-path: none !important;
+  transition: none !important;
+}
+
+/* 7. Reset Hover Backgrounds & Colors (Prevent Sticky Hover) */
+body.is-tablet .button:hover,
+body.is-tablet .button2:hover {
+  background: inherit !important;
+  border-color: inherit !important;
+}
+
+body.is-tablet .button:hover span,
+body.is-tablet .button2:hover span {
+  color: inherit !important;
+}
+
+/* 8. Circle Button Reset */
+body.is-tablet .circle-button::after {
+  clip-path: none !important;
+  transition: none !important;
+  background: transparent !important;
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+  .hero-section-in-inventory-management {
+    height: 100%;
+    min-height: fit-content;
+  }
+  .underline-button::after {
+    display: none !important;
+  }
+
+  .border-apply-in-inventory-management:hover {
+    background: transparent;
+    border: 1.5px solid #0a0f0a;
+  }
+
+  /* SVG becomes white */
+  .circle-button:hover svg {
+    color: black;
+  }
+  .circle-button:hover svg path {
+    fill: black;
+  }
+
+  .button::after,
+  .button2::after {
+    clip-path: none !important;
+    transition: none !important;
+    background: transparent !important;
+    border: none !important;
+  }
+
+  .button:after {
+    background: #772bf2 !important;
+  }
+
+  .button2:after {
+    background: #f5f9f5 !important;
+  }
+
+  .black-border-remover-in-inventory-management {
+    border: none !important;
+  }
+
+  .button span,
+  .button2 span {
+    position: relative;
+    z-index: 2;
+  }
+
+  .button:hover::after,
+  .button2:hover::after {
+    clip-path: none !important;
+    transition: none !important;
+  }
+
+  /* Prevent text color changing on hover */
+  .button:hover,
+  .button2:hover {
+    background: inherit !important;
+    border-color: inherit !important;
+  }
+
+  .button:hover span,
+  .button2:hover span {
+    color: inherit !important;
+  }
+
+  .circle-button::after {
+    clip-path: none !important;
+    transition: none !important;
+    background: transparent !important;
+  }
+
+  .circle-button:hover::after {
+    clip-path: none !important;
+    transition: none !important;
+  }
+
+  .mobile-position-of-absolute-container-buttons {
+    transform: translateY(40%);
+  }
+  .navbar-section-in-inventory-management,
+  .problem-section-content-holder-in-inventory-management,
+  .benfits-section-content-holder-in-inventory-management,
+  .video-section-content-holder-in-inventory-management,
+  .benefits-section-content-holder-in-inventory-management,
+  .testimonial-section-content-holder-in-inventory-management,
+  .pricing-section-content-holder-in-inventory-management,
+  .footer-section-container-in-inventory-management {
+    padding-inline: 1.5rem;
+  }
+
+  .cta-section-in-inventory-management {
+    margin-inline: 1.5rem;
+  }
+
+  .scroll-of-horizontal-in-inventory-management {
+    padding: 0;
+  }
+  .heading-section-title-in-inventory-management {
+    font-size: 3rem;
+    line-height: 120%;
+  }
+
+  .in-mobile-not-visible {
+    display: none;
+  }
+  .spradesheet-usage-text-in-inventory-management {
+    font-size: 2rem;
+    line-height: 120%;
+  }
+  .plan-heading-in-inventory-management,
+  .why-manufacturers-love-us-header-in-inventory-management {
+    font-size: 1.5rem;
+    line-height: 120%;
+  }
+
+  .contact-and-form-holder-in-popup-invite-in-inventory-management {
+    gap: 1rem;
+  }
+
+  .popup-content-holder-in-inventory-management {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+  .desktop-hide-in-small-desktop {
+    display: none;
+  }
+
+  .contact-and-form-holder-in-popup-invite-in-inventory-management {
+    gap: 1rem;
+    grid-template-columns: 0.7fr 1.3fr;
+  }
+
+  .popup-content-holder-in-inventory-management {
+    width: 90%;
+    max-width: 90%;
+  }
+}
