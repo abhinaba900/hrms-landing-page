@@ -2,12 +2,23 @@
 
 import { useEffect, useRef, useState } from "react";
 import HorizontalScroller from "./ScrollVelocity";
-import { Menu, X } from "lucide-react";
+import {
+  Menu,
+  X,
+  Cloud,
+  Network,
+  FileText,
+  Users,
+  AppWindow,
+  Smartphone,
+} from "lucide-react";
 import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
 import FeatureSwitcher from "@/components/ui/FeatureSwitcher";
 import Link from "next/link";
-import TestimonialSection from "@/components/ui/TestimonialSection";
-import Image from "next/image";
+import HowItWorks from "@/components/ui/HowItWorks";
+import WhoIsPeopleMS from "@/components/ui/WhoIsPeopleMS";
+import TestimonialSlider from "@/components/ui/TestimonialSlider";
+import NextImage from "next/image";
 
 // --- 1. TypeScript Augmentation ---
 declare module "react" {
@@ -203,7 +214,7 @@ export default function Index() {
   const formRef = useRef<HTMLFormElement>(null);
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
@@ -701,7 +712,7 @@ export default function Index() {
                   >
                     {label}
                   </Link>
-                )
+                ),
               )}
             </div>
 
@@ -786,7 +797,11 @@ export default function Index() {
                 >
                   <span>Get in touch</span>
                 </button>
-                <button type="button" onClick={() => setOpen(true)} className="button2 type2 nav-links-in-inventory-management-get-in-touch px-9  py-4 rounded-full border-[1.5px] border-brand-bg bg-brand-bg text-brand-dark font-['Sequel_Sans'] text-base font-normal hover:bg-brand-bg/90 transition-colors">
+                <button
+                  type="button"
+                  onClick={() => setOpen(true)}
+                  className="button2 type2 nav-links-in-inventory-management-get-in-touch px-9  py-4 rounded-full border-[1.5px] border-brand-bg bg-brand-bg text-brand-dark font-['Sequel_Sans'] text-base font-normal hover:bg-brand-bg/90 transition-colors"
+                >
                   <span>Book a Free Demo</span>
                 </button>
               </div>
@@ -801,22 +816,26 @@ export default function Index() {
         {/* Hero Content */}
         <div className="relative  max-w-[1312px] mx-auto px-16 pt-20 text-center hero-section-parennt-in-inventory-management">
           <h1 className="text-[84px] heading-section-title-in-inventory-management leading-[110px] font-['Sequel_Sans'] font-normal text-brand-dark tracking-[-1.68px] mb-6">
-            Smart Inventory Management <br />
-            for Smarter Manufacturing
+            Manage People. Simplify HR. <br />
+            Grow Faster.
           </h1>
 
           <p className="text-xl font-['Sequel_Sans'] subtext-section-title-in-inventory-management font-normal text-brand-dark mb-12 max-w-[875px] mx-auto">
-            Track raw materials, streamline production and eliminate stock
-            errors — all in one powerful dashboard.
+            PeopleMS is an intelligent HR Management System designed to automate
+            attendance, payroll, leave management, AI employee queries, reports,
+            and benefits - all in one seamless platform.
           </p>
 
           {/* CTA Buttons */}
           <div className="relative flex items-center justify-center gap-5 mb-[5rem] button-content-holder-in-inventory-management">
-            <button onClick={() => setOpen(true)} className="button nav-links-in-inventory-management-get-in-touch nav-links-in-inventory-management-get-in-touch type1 px-9 py-4 rounded-full bg-brand-purple  text-brand-bg font-['Sequel_Sans'] text-base font-normal hover:bg-brand-purple/90 transition-colors">
-              <span>Book a Free Demo</span>
+            <button
+              onClick={() => setOpen(true)}
+              className="button nav-links-in-inventory-management-get-in-touch nav-links-in-inventory-management-get-in-touch type1 px-9 py-4 rounded-full bg-brand-purple  text-brand-bg font-['Sequel_Sans'] text-base font-normal hover:bg-brand-purple/90 transition-colors"
+            >
+              <span>Start Free Trial</span>
             </button>
             <button className="button2 type2 px-9 py-4 nav-links-in-inventory-management-get-in-touch rounded-full bg-brand-purple  text-brand-bg font-['Sequel_Sans'] text-base font-normal hover:bg-brand-purple/90 transition-colors">
-              <span>See How It Works</span>
+              <span>Book a Live Demo</span>
             </button>
             <svg
               className="absolute w-[157px] -bottom-[8rem] -right-[4rem] in-mobile-not-visible desktop-hide-in-small-desktop"
@@ -914,19 +933,20 @@ export default function Index() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-[5rem] heading-and-subtext-content-holder-in-inventory-management">
             <div>
               <h2 className="text-[52px] spradesheet-usage-text-in-inventory-management leading-[62.4px] font-['Sequel_Sans'] font-normal text-brand-dark tracking-[-1.04px] mb-8 -mt-3">
-                Still using spreadsheets to track inventory?
+                Is your HR still manual?
               </h2>
             </div>
             <div className="flex items-center">
               <p className="text-lg font-['Sequel_Sans'] spradesheet-usage-subtext-in-inventory-management font-normal text-brand-dark leading-[25.2px]">
-                Our system automates tracking from raw materials to finished
-                goods, giving you complete visibility, instant alerts, and smart
-                analytics so you can focus on production, not paperwork.
+                PeopleMS automates your entire HR workflow - from attendance to
+                payroll and employee queries - giving you real-time visibility,
+                fewer errors, and smarter control, so your team can focus on
+                people, not paperwork.
               </p>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 relative problem-section-cards-holder-in-inventory-management">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 justify-center items-center relative problem-section-cards-holder-in-inventory-management">
             <img
               src="assets/still-using-spradesheets-3-section-icon.svg"
               className="absolute -right-[4rem] -top-[4rem] in-mobile-not-visible"
@@ -944,11 +964,11 @@ export default function Index() {
                 className="w-[100px] h-[89px] mb-6"
               />
               <h3 className="text-xl font-['Sequel_Sans'] font-normal text-brand-dark mb-3 leading-tight spradesheet-usage-card-title-text-in-inventory-management">
-                Missed reorders cause <br /> Production Delays
+                Payroll errors slow you down
               </h3>
               <p className="text-base font-['Sequel_Sans'] font-normal text-brand-dark leading-relaxed spradesheet-usage-card-subtext-text-in-inventory-management">
-                Get instant low-stock alerts to restock materials before they
-                run out.
+                Automate salary calculations, taxes, and compliance to eliminate
+                mistakes and last-minute payroll stress.
               </p>
             </div>
 
@@ -964,11 +984,11 @@ export default function Index() {
                 className="w-[88px] h-[88px] mb-6"
               />
               <h3 className="text-xl font-['Sequel_Sans'] font-normal text-brand-dark mb-3 leading-tight spradesheet-usage-card-title-text-in-inventory-management">
-                Manual stock tracking leads <br /> to Costly Errors
+                Leave conflicts disrupt teams
               </h3>
               <p className="text-base font-['Sequel_Sans'] font-normal text-brand-dark leading-relaxed spradesheet-usage-card-subtext-text-in-inventory-management">
-                Automate your entries and eliminate human mistakes in inventory
-                updates.
+                Clear leave policies and approval workflows prevent confusion
+                and miscommunication across teams.
               </p>
             </div>
 
@@ -984,11 +1004,49 @@ export default function Index() {
                 className="w-[89px] h-[90px] mb-6"
               />
               <h3 className="text-xl font-['Sequel_Sans'] font-normal text-brand-dark mb-3 leading-tight spradesheet-usage-card-title-text-in-inventory-management">
-                No Visibility into Raw <br /> material Movement
+                Attendance data isn’t reliable
               </h3>
               <p className="text-base font-['Sequel_Sans'] font-normal text-brand-dark leading-relaxed spradesheet-usage-card-subtext-text-in-inventory-management">
-                Track every material from purchase to production in real time
-                with live dashboards.
+                Track attendance in real time with accurate check-ins, shifts,
+                and overtime - all in one dashboard.
+              </p>
+            </div>
+            <div
+              className="rounded-3xl border-[1.5px] border-brand-dark bg-brand-bg p-6 hover:shadow-[8px_8px_0_0_#000]"
+              style={{
+                border: "2px solid #000",
+              }}
+            >
+              <img
+                src="assets/HR-buried-in-repetitive-queries.webp"
+                alt="No Visibility"
+                className="w-[89px] h-[90px] mb-6"
+              />
+              <h3 className="text-xl font-['Sequel_Sans'] font-normal text-brand-dark mb-3 leading-tight spradesheet-usage-card-title-text-in-inventory-management">
+                HR buried in repetitive queries
+              </h3>
+              <p className="text-base font-['Sequel_Sans'] font-normal text-brand-dark leading-relaxed spradesheet-usage-card-subtext-text-in-inventory-management">
+                AI-powered employee self-service answers common HR questions
+                instantly, reducing HR workload.
+              </p>
+            </div>
+            <div
+              className="rounded-3xl border-[1.5px] border-brand-dark bg-brand-bg p-6 hover:shadow-[8px_8px_0_0_#000]"
+              style={{
+                border: "2px solid #000",
+              }}
+            >
+              <img
+                src="assets/No-visibility-into-workforce-data.webp"
+                alt="No Visibility"
+                className="w-[89px] h-[90px] mb-6"
+              />
+              <h3 className="text-xl font-['Sequel_Sans'] font-normal text-brand-dark mb-3 leading-tight spradesheet-usage-card-title-text-in-inventory-management">
+                No visibility into workforce data
+              </h3>
+              <p className="text-base font-['Sequel_Sans'] font-normal text-brand-dark leading-relaxed spradesheet-usage-card-subtext-text-in-inventory-management">
+                Access real-time reports and analytics to make faster,
+                data-driven HR decisions.
               </p>
             </div>
           </div>
@@ -1020,8 +1078,9 @@ export default function Index() {
               style={{ color: "#F5F9F5" }}
               className="text-[52px] leading-[62.4px] font-['Sequel_Sans'] factory-floor-text-heading-in-inventory-management font-normal text-brand-bg tracking-[-1.04px] mb-4"
             >
-              Everything you need to run a <br />
-              smooth factory floor
+              Everything you need to
+              <br />
+              run HR, smarter
             </h2>
             <img
               className="absolute -bottom-[2.5rem] right-[12rem] in-mobile-not-visible"
@@ -1030,72 +1089,108 @@ export default function Index() {
             />
           </div>
 
-          {/* <div className="bg-[#FFFFFF] rounded-[32px] overflow-hidden">
-            <div className="grid grid-cols-1 lg:grid-cols-5">
-              <div className="lg:col-span-2 p-8 flex flex-col justify-between productivity-card-content-holder-in-inventory-management">
-                <div>
-                  <h3 className="text-[28px] leading-[33.6px] system-usage-card-title-text-in-inventory-management font-['Sequel_Sans'] font-normal text-brand-dark tracking-[-0.56px] mb-8">
-                    You make the products. Our system manages the process.
-                  </h3>
-
-                  <button className="button explore-more-in-features-section-in-inventory-management nav-links-in-inventory-management-get-in-touch nav-links-in-inventory-management-get-in-touch type1 px-9 py-4 rounded-full bg-brand-purple  text-brand-bg font-['Sequel_Sans'] text-base font-normal hover:bg-brand-purple/90 transition-colors">
-                    <span>Explore more</span>
-                  </button>
-                </div>
-
-                <div className="space-y-0 ">
-                  <div className="py-4 border-b border-brand-dark/10 hidden lg:block">
-                    <h4 className="text-lg font-['Sequel_Sans'] font-normal text-brand-dark mb-1 row-materials-tracking-heading-in-inventory-management">
-                      Raw Materials Tracking
-                    </h4>
-                    <p className="text-base font-['Sequel_Sans'] font-normal text-brand-dark/80 row-materials-tracking-subtext-text-in-inventory-management">
-                      Get instant low-stock alerts to restock materials before
-                      they run out.
-                    </p>
-                  </div>
-                  <div className="py-4 border-b border-brand-[#0A0F0A]/10">
-                    <h4 className="text-lg font-['Sequel_Sans'] font-normal text-brand-dark row-materials-options-tracking-heading-in-inventory-management">
-                      Production Monitoring
-                    </h4>
-                  </div>
-                  <div className="py-4 border-b border-brand-[#0A0F0A]/10">
-                    <h4 className="text-lg font-['Sequel_Sans'] font-normal text-brand-dark row-materials-options-tracking-heading-in-inventory-management">
-                      Quality Control & Defect Tracking
-                    </h4>
-                  </div>
-                  <div className="py-4 border-b border-brand-[#0A0F0A]/10">
-                    <h4 className="text-lg font-['Sequel_Sans'] font-normal text-brand-dark row-materials-options-tracking-heading-in-inventory-management">
-                      Vendor Management
-                    </h4>
-                  </div>
-                  <div className="py-4">
-                    <h4 className="text-lg font-['Sequel_Sans'] font-normal text-brand-dark row-materials-options-tracking-heading-in-inventory-management">
-                      Smart Reports & Analytics
-                    </h4>
-                  </div>
-                </div>
-              </div>
-
-              <div className="lg:col-span-3 relative bg-brand-bg relative">
-                <div className="absolute  opacity-80">
-                  <div className="w-full h-full rounded-full bg-[#5B68DF]/90 z-1 blur-[273px]" />
-                </div>
-                <div className="relative pt-8 pl-8 background-image-for-dashboard-image-in-inventory-management">
-                  <img
-                    src="/assets/Dashboard Screenshot in smart inventory.webp"
-                    alt="Dashboard Screenshot"
-                    className="w-full  shadow-xl"
-                  />
-                </div>
-              </div>
-            </div>
-          </div> */}
           <FeatureSwitcher setOpen={setOpen} />
         </div>
       </section>
 
+      {/* Why Choose Us Section */}
+      <section className="py-24 bg-[#FCFFF4]">
+        <div className="max-w-[1440px] mx-auto px-6 lg:px-18">
+          <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-16 gap-8">
+            <div className="max-w-[800px]">
+              <h2 className="text-[52px] why-chose-people-ms-heading-in-inventory-management font-['Sequel_Sans'] font-[420] text-[#0A0F0A] leading-[120%] tracking-[-1.04px] mb-4">
+                Why choose PeopleMS?
+              </h2>
+              <p className="text-[20px] why-chose-people-ms-subtext-in-inventory-management font-['Sequel_Sans'] font-[410] text-[#0A0F0A] leading-[140%]">
+                Built to be secure, flexible, and scalable - PeopleMS adapts to
+                your team as you grow.
+              </p>
+            </div>
+            <button
+              onClick={() => setOpen(true)}
+              className="button video-section-button-in-inventory-management nav-links-in-inventory-management-get-in-touch nav-links-in-inventory-management-get-in-touch type1 px-9 py-4 rounded-full bg-brand-purple text-brand-bg font-['Sequel_Sans'] text-base font-normal  hover:bg-brand-purple/90 transition-colors"
+            >
+              <span>Explore more</span>
+            </button>
+          </div>
+
+          {/* Cards Grid with Fillet Effect */}
+          <div className="relative mt-12 overflow-hidden rounded-[12px] lg:rounded-none lg:overflow-visible">
+            {/* Background container for the fillet borders */}
+            <div className="flex flex-col lg:flex-row w-full bg-[#000000] lg:pt-[1.5px] lg:gap-[2px]">
+              {[
+                {
+                  icon: "/assets/99.9-Uptime.webp",
+                  title: "99.9%\nUptime",
+                  subtext:
+                    "Enterprise-grade cloud infrastructure ensures your HR data is always available and protected.",
+                },
+                {
+                  icon: "/assets/3-Level-Role-System.webp",
+                  title: "3-Level\nRole System",
+                  subtext:
+                    "Admins, HR teams, and employees get clearly defined, permission-based access.",
+                },
+                {
+                  icon: "/assets/40-fewer-HR-Tasks.webp",
+                  title: "40% fewer\nHR Tasks",
+                  subtext:
+                    "Automation and AI-powered queries free HR teams from repetitive manual tasks.",
+                },
+                {
+                  icon: "/assets/10x-Team-Growth-Ready.webp",
+                  title: "10x Team\nGrowth Ready",
+                  subtext:
+                    "PeopleMS adapts as your workforce expands - without changing systems or workflows.",
+                },
+                {
+                  icon: "/assets/go-Live-in-Hours.webp",
+                  title: "Go Live in\nHours",
+                  subtext:
+                    "Set up your organization, add employees, and start running HR without long implementation cycles.",
+                },
+                {
+                  icon: "/assets/100-Mobile-Ready.webp",
+                  title: "100%\nMobile-Ready",
+                  subtext:
+                    "Manage attendance, leave, and approvals seamlessly from any device.",
+                },
+              ].map((feature, index) => (
+                <div
+                  key={index}
+                  className={`
+                    flex-1 pt-4 pb-4 px-4 xl:px-4 flex flex-col items-start justify-between bg-[#FCFFF4]
+                    mb-[1.5px] lg:mb-0
+                    ${index === 0 ? "lg:rounded-tr-[12px]" : ""}
+                    ${index > 0 && index < 5 ? "lg:rounded-t-[12px]" : ""}
+                    ${index === 5 ? "lg:rounded-tl-[12px]" : ""}
+                  `}
+                >
+                  <div>
+                    <div className="mb-6">
+                      <img
+                        src={feature.icon}
+                        width={40}
+                        height={40}
+                        alt={feature.title}
+                      />
+                    </div>
+                    <h3 className="text-[28px] why-chose-people-ms-feature-title-in-inventory-management font-['Sequel_Sans'] font-[420] text-[#0A0F0A] leading-[120%] tracking-[-0.56px] mb-4 whitespace-pre-line xl:min-h-[66px]">
+                      {feature.title}
+                    </h3>
+                  </div>
+                  <p className="text-[16px] why-chose-people-ms-feature-subtext-in-inventory-management font-['Sequel_Sans'] font-[405] text-[#0A0F0A] leading-[140%]">
+                    {feature.subtext}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Video Section */}
-      <section
+      {/* <section
         id="demo"
         className="py-24 bg-[#f5f9f5] video-section-parent-in-inventory-management"
       >
@@ -1114,7 +1209,10 @@ export default function Index() {
             See how our software streamlines your workflow
           </p>
 
-          <button onClick={() => setOpen(true)} className="button video-section-button-in-inventory-management nav-links-in-inventory-management-get-in-touch nav-links-in-inventory-management-get-in-touch type1 px-9 py-4 rounded-full bg-brand-purple text-brand-bg font-['Sequel_Sans'] text-base font-normal mb-[5rem] hover:bg-brand-purple/90 transition-colors">
+          <button
+            onClick={() => setOpen(true)}
+            className="button video-section-button-in-inventory-management nav-links-in-inventory-management-get-in-touch nav-links-in-inventory-management-get-in-touch type1 px-9 py-4 rounded-full bg-brand-purple text-brand-bg font-['Sequel_Sans'] text-base font-normal mb-[5rem] hover:bg-brand-purple/90 transition-colors"
+          >
             <span>Schedule a Live Demo</span>
           </button>
 
@@ -1153,10 +1251,16 @@ export default function Index() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
+      {/* How it Works Section */}
+      <HowItWorks />
+
+      {/* Who is PeopleMS For Section */}
+      <WhoIsPeopleMS />
 
       {/* Benefits Section */}
-      <section
+      {/* <section
         id="benefits"
         className="relative py-24 bg-brand-bg overflow-hidden why-manufactures-love-us-in-inventory-management"
       >
@@ -1276,95 +1380,10 @@ export default function Index() {
       </section>
 
       {/* Testimonial Section */}
-      <section
-        id="customers"
-        className="py-24 bg-[#f5f9f5] testimonial-section-in-inventory-management"
-      >
-        <div className="max-w-7xl mx-auto px-16 testimonial-section-content-holder-in-inventory-management">
-          <div className="flex justify-between items-center mb-[5rem] testimonial-header-in-inventory-management">
-            <h2 className="text-[52px] center-align-text leading-[62.4px] spradesheet-usage-text-in-inventory-management font-['Sequel_Sans'] font-normal text-brand-dark tracking-[-1.04px] ">
-              Trusted by Leading <br />
-              Manufacturers Across India
-            </h2>
-            <img
-              className="w-[124px] h-[124px] in-mobile-not-visible"
-              src="assets/trusted-by-leading-manufacturers-across-india-icon.svg"
-              alt=""
-            />
-          </div>
-
-          {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center img-and-content-holder-in-testimonial-in-inventory-management">
-            <div>
-              <img
-                src="assets/space-luggage-main-image.webp"
-                alt="Customer Testimonial"
-                className="w-full rounded-2xl"
-              />
-            </div>
-
-            <div>
-              <h3 className="text-[28px] leading-[33.6px] testimonial-sub-header-in-inventory-management why-manufacturers-love-us-header-in-inventory-management font-['Sequel_Sans'] font-normal text-brand-dark tracking-[-0.56px] mb-6">
-                They transformed how we manage production.
-              </h3>
-              <p className="text-xl font-['Sequel_Sans'] font-normal transformes-how-we-manage-production-subheader-in-inventory-management text-brand-dark leading-relaxed mb-8">
-                " We reduced stock wastage by 40% with Third Eye's inventory
-                tool. The live tracking system gave us complete control over raw
-                materials and production flow, we've never been this efficient.
-                "
-              </p>
-              <p className="text-[22px] font-['Sequel_Sans'] text-brand-dark mb-[2.5rem] slider-subheader-in-inventory-management">
-                <span className="font-normal">Operations Head,</span> Space
-                Luggage
-              </p>
-              <div className="flex items-center justify-between gap-4 mb-8 icon-and-button-holder-in-testimonial-in-inventory-management">
-                <img
-                  src="assets/space-luggage-icon.svg"
-                  alt="Space Luggage Logo"
-                  className="h-[55px]"
-                />
-                <div className="flex gap-2 testimonial-button-holder-in-inventory-management">
-                  <button className="w-16 h-16 circle-button rounded-full border-[1.5px] border-brand-dark bg-brand-bg flex items-center justify-center hover:bg-brand-dark/5 transition-colors">
-                    <svg
-                      width="32"
-                      height="13"
-                      viewBox="0 0 32 13"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M1.4458 5.01261C3.0509 4.3924 7.98002 3.37939 10.0747 0.962047C11.4532 -0.633661 12.1378 -0.119253 10.914 1.58641C10.0161 2.8338 8.43921 4.07372 6.7947 4.82349C8.70004 4.84838 17.4619 4.73785 28.9835 5.20635C31.2996 5.30477 31.5606 5.49158 31.2531 6.12314C30.8536 6.91175 30.2475 7.31374 29.4565 7.31029C29.4363 7.30916 5.58863 7.00649 5.58126 7.25946C5.57847 7.29985 5.89717 7.53054 6.294 7.80599C9.0074 9.63938 9.98453 11.2037 8.89515 11.9946C8.38215 12.3714 7.47473 11.9967 5.94561 10.7867C5.31083 10.2851 3.80015 9.24838 2.57584 8.47081C-0.522564 6.48425 -0.732556 5.85431 1.4458 5.01261Z"
-                        fill="black"
-                      />
-                    </svg>
-                  </button>
-                  <button className="w-16 h-16 circle-button rounded-full border-[1.5px] border-brand-dark bg-brand-bg flex items-center justify-center hover:bg-brand-dark/5 transition-colors">
-                    <svg
-                      width="32"
-                      height="13"
-                      viewBox="0 0 32 13"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M29.9121 5.01261C28.307 4.3924 23.3779 3.37939 21.2832 0.962047C19.9047 -0.633661 19.2201 -0.119253 20.4439 1.58641C21.3418 2.8338 22.9187 4.07372 24.5632 4.82349C22.6579 4.84838 13.896 4.73785 2.37445 5.20635C0.0582945 5.30477 -0.202671 5.49158 0.104792 6.12314C0.504279 6.91175 1.1104 7.31374 1.90138 7.31029C1.92159 7.30916 25.7693 7.00649 25.7766 7.25946C25.7794 7.29985 25.4607 7.53054 25.0639 7.80599C22.3505 9.63938 21.3734 11.2037 22.4628 11.9946C22.9758 12.3714 23.8832 11.9967 25.4123 10.7867C26.0471 10.2851 27.5578 9.24838 28.7821 8.47081C31.8805 6.48425 32.0905 5.85431 29.9121 5.01261Z"
-                        fill="black"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div> */}
-          <TestimonialSection />
-        </div>
-      </section>
+      <TestimonialSlider />
 
       {/* Pricing Section */}
-      <section
+      {/* <section
         id="pricing"
         className="py-24 bg-[#f5f9f5] pricing-section-in-inventory-management pt-10 pb-50"
       >
@@ -1390,7 +1409,10 @@ export default function Index() {
                 core inventory tools.
               </p>
 
-              <button onClick={() => setOpen(true)} className="button2 type2 nav-links-in-inventory-management-get-in-touch w-full px-9 py-4 rounded-full border-[1.5px] border-brand-dark bg-brand-bg text-brand-dark font-['Sequel_Sans'] text-base font-normal hover:bg-brand-dark/5 transition-colors">
+              <button
+                onClick={() => setOpen(true)}
+                className="button2 type2 nav-links-in-inventory-management-get-in-touch w-full px-9 py-4 rounded-full border-[1.5px] border-brand-dark bg-brand-bg text-brand-dark font-['Sequel_Sans'] text-base font-normal hover:bg-brand-dark/5 transition-colors"
+              >
                 {" "}
                 <span>Get Basic</span>
               </button>
@@ -1408,7 +1430,10 @@ export default function Index() {
                 streamline every production stage.
               </p>
 
-              <button onClick={() => setOpen(true)} className="button w-full nav-links-in-inventory-management-get-in-touch px-9 py-4 rounded-full bg-brand-purple text-brand-bg font-['Sequel_Sans'] text-base font-normal hover:bg-brand-purple/90 transition-colors">
+              <button
+                onClick={() => setOpen(true)}
+                className="button w-full nav-links-in-inventory-management-get-in-touch px-9 py-4 rounded-full bg-brand-purple text-brand-bg font-['Sequel_Sans'] text-base font-normal hover:bg-brand-purple/90 transition-colors"
+              >
                 <span>Get Pro</span>
               </button>
             </div>
@@ -1425,13 +1450,16 @@ export default function Index() {
                 and system integrations built for scale.
               </p>
 
-              <button onClick={() => setOpen(true)} className="button2 type2 nav-links-in-inventory-management-get-in-touch w-full px-9 py-4 rounded-full border-[1.5px] border-brand-dark bg-brand-bg text-brand-dark font-['Sequel_Sans'] text-base font-normal hover:bg-brand-dark/5 transition-colors">
+              <button
+                onClick={() => setOpen(true)}
+                className="button2 type2 nav-links-in-inventory-management-get-in-touch w-full px-9 py-4 rounded-full border-[1.5px] border-brand-dark bg-brand-bg text-brand-dark font-['Sequel_Sans'] text-base font-normal hover:bg-brand-dark/5 transition-colors"
+              >
                 <span>Get Enterprise</span>
               </button>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="relative cta-section-in-inventory-management z-1 py-20 mx-16 mb-24 bg-[#f5f9f5] rounded-[32px] overflow-hidden  everything-you-need-text-in-inventory-management">
@@ -1442,11 +1470,11 @@ export default function Index() {
         />
         <div className="relative z-1 text-center max-w-3xl mx-auto px-8 cta-section-content-in-inventory-management">
           <h2 className="text-[52px] cta-section-title-in-inventory-management text-[#F5F9F5] leading-[62.4px] spradesheet-usage-text-in-inventory-management font-['Sequel_Sans'] font-normal text-brand-bg tracking-[-1.04px] mb-6">
-            Ready to take control of Your Inventory?
+             Ready to transform <br /> your HR?
           </h2>
           <p className="text-xl text-[#F5F9F5] font-['Sequel_Sans'] font-normal text-brand-bg mb-12 subhading-ready-to-take-control-in-inventory-management">
-            Join manufacturers across India who trust our Inventory tool to
-            streamline operations and cut costs
+            Stop chasing spreadsheets. <br /> Start managing people
+            intelligently.
           </p>
           <img
             src="assets/ready-to-take-control-of-your-inventory-right-logo.svg"
@@ -1454,11 +1482,17 @@ export default function Index() {
             alt=""
           />
           <div className="flex items-center justify-center gap-6 mb-8 cta-section-button-holder-in-inventory-management">
-            <button onClick={() => setOpen(true)} className="button2 type2 black-border-remover-in-inventory-management cta-section-button-in-inventory-management nav-links-in-inventory-management-get-in-touch px-9 bullets-ready-to-take-control-in-inventory-management py-4 rounded-full border-[1.5px] border-brand-bg bg-brand-bg text-brand-dark font-['Sequel_Sans'] text-base font-normal hover:bg-brand-bg/90 transition-colors">
+            <button
+              onClick={() => setOpen(true)}
+              className="button2 type2 black-border-remover-in-inventory-management cta-section-button-in-inventory-management nav-links-in-inventory-management-get-in-touch px-9 bullets-ready-to-take-control-in-inventory-management py-4 rounded-full border-[1.5px] border-brand-bg bg-brand-bg text-brand-dark font-['Sequel_Sans'] text-base font-normal hover:bg-brand-bg/90 transition-colors"
+            >
               <span>Book a Free Demo</span>
             </button>
 
-            <button onClick={() => setOpen(true)} className="button type1 white-border-remover-in-inventory-management cta-section-button-in-inventory-management nav-links-in-inventory-management-get-in-touch px-9 bullets-ready-to-take-control-in-inventory-management py-4 rounded-full border-[1.5px]  text-brand-bg font-['Sequel_Sans'] text-base font-norma ">
+            <button
+              onClick={() => setOpen(true)}
+              className="button type1 white-border-remover-in-inventory-management cta-section-button-in-inventory-management nav-links-in-inventory-management-get-in-touch px-9 bullets-ready-to-take-control-in-inventory-management py-4 rounded-full border-[1.5px]  text-brand-bg font-['Sequel_Sans'] text-base font-norma "
+            >
               <span>Start a Free Trial</span>
             </button>
           </div>
@@ -1505,7 +1539,7 @@ export default function Index() {
           <div className="flex justify-between grid-cols-1 md:grid-cols-4 gap-0 lg:gap-12 mb-[5rem] footer-social-links-container-in-inventory-management">
             <div className="footer-section-logo-and-paragraph-holder w-[351px]">
               <div className="flex items-center gap-4 mb-6 -mt-8 third-eye-logo-in-inventory-management">
-                <Image
+                <NextImage
                   width={239}
                   height={123}
                   src="/assets/footer-thired-eye-logo.png"

@@ -189,7 +189,8 @@ rect {
     --font-family-sequel-sans-light-display: "Sequel Sans Light Display";
     --font-family-sequel-sans-bold-head: "Sequel Sans Bold Head", sans-serif;
     --font-family-sequel-sans-book-head: "Sequel Sans Book Head", sans-serif;
-    --font-family-sequel-sans-medium-head: "Sequel Sans Medium Head", sans-serif;
+    --font-family-sequel-sans-medium-head:
+      "Sequel Sans Medium Head", sans-serif;
     --font-family-sequel-sans-bold-display: "Sequel Sans Bold Display";
     --font-family-sequel-sans-semi-bold-display: "Sequel Sans Semi Bold Disp";
   }
@@ -820,7 +821,9 @@ rect {
   left: 0;
   width: 100%;
   z-index: 2;
-  transition: transform 0.35s ease, opacity 0.35s ease;
+  transition:
+    transform 0.35s ease,
+    opacity 0.35s ease;
 }
 
 /* When scrolling UP → show */
@@ -839,6 +842,86 @@ rect {
   top: 0;
   transform: translateY(0);
   opacity: 100%;
+}
+
+.why-chose-people-ms-heading-in-inventory-management {
+  font-family: var(--font-family-sequel-sans-semi-bold-display);
+}
+
+.why-chose-people-ms-subtext-in-inventory-management {
+  font-family: var(--font-family-sequel-sans-book-display);
+}
+
+.why-chose-people-ms-feature-title-in-inventory-management {
+  font-family: var(--font-family-sequel-sans-semi-bold-display);
+}
+
+.why-chose-people-ms-feature-subtext-in-inventory-management {
+  font-family: var(--font-family-sequel-sans-book-display);
+}
+
+.how-it-works-number-text-in-inventory-management {
+  font-family: var(--font-family-sequel-sans-semi-bold-display);
+  font-weight: 420;
+  font-size: 32px;
+  line-height: 120%;
+  letter-spacing: -2%;
+}
+
+.how-it-works-title-text-in-inventory-management {
+  font-family: var(--font-family-sequel-sans-semi-bold-display);
+  font-weight: 420;
+  font-size: 24px;
+  line-height: 120%;
+}
+
+.how-it-works-description-text-in-inventory-management {
+  font-family: var(--font-family-sequel-sans-book-display);
+  font-weight: 405;
+  font-size: 16px;
+  line-height: 120%;
+}
+
+.who-is-peoplems-card-text-size {
+  font-weight: 420;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  font-family: var(--font-family-sequel-sans-semi-bold-display);
+}
+
+.who-is-peoplems-title-size {
+  font-weight: 420;
+  font-size: 52px;
+  line-height: 120%;
+  letter-spacing: -1.04px;
+  font-family: var(--font-family-sequel-sans-semi-bold-display);
+}
+
+.who-is-peoplems-subtext {
+  font-weight: 405;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  font-family: var(--font-family-sequel-sans-book-display);
+}
+
+.testimonial-slider-text-in-inventory-management {
+  font-family: var(--font-family-sequel-sans-medium-display);
+  font-weight: 615;
+  font-size: 32px;
+  line-height: 140%;
+  letter-spacing: -2%;
+  text-align: center;
+}
+
+.testimonial-slider-author-in-inventory-management {
+  font-family: var(--font-family-sequel-sans-medium-display);
+  font-weight: 415;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: -2%;
+  text-align: center;
 }
 
 @media (max-width: 767px) {
@@ -1051,6 +1134,8 @@ rect {
     font-size: 1rem;
     line-height: 140%;
     margin-bottom: 1rem;
+    font-family: var(--font-family-sequel-sans-regular-display);
+    font-weight: 405;
   }
 
   .video-section-button-in-inventory-management {
@@ -1538,7 +1623,6 @@ rect {
     border: 1.5px solid #0a0f0a;
   }
 
- 
   .circle-button:hover svg {
     color: black;
   }
@@ -1571,7 +1655,6 @@ rect {
     transition: none !important;
   }
 
- 
   .button:hover,
   .button2:hover {
     background: inherit !important;
@@ -1594,8 +1677,6 @@ rect {
     transition: none !important;
   }
 }
-
-
 
 /* =========================================
    TABLET-SPECIFIC OVERRIDES
@@ -1817,4 +1898,35 @@ body.is-tablet .circle-button::after {
     width: 90%;
     max-width: 90%;
   }
+}
+
+/* =========================================
+   Who is PeopleMS For – Slider Section
+   ========================================= */
+
+/* Hide scrollbar but keep functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.who-is-peoplems-subtext {
+  font-family: var(--font-family-sequel-sans-book-display);
+  font-weight: 405;
+  font-size: 1.125rem;
+  line-height: 140%;
+  letter-spacing: 0%;
+  color: #0a0f0a;
+  text-align: center;
+}
+
+.who-is-peoplems-track {
+  padding-bottom: 8px;
+}
+
+.who-is-peoplems-card {
+  cursor: pointer;
 }

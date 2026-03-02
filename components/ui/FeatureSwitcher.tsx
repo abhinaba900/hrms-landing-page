@@ -14,24 +14,28 @@ export default function FeatureSwitcher({setOpen}: any) {
 
   const items = [
     {
-      title: "Raw Materials Tracking",
-      desc: "Get instant low-stock alerts to restock materials before they run out.",
+      title: "Attendance Management",
+      desc: "Track employee attendance in real time with accurate check-ins, shifts, and overtime.",
     },
     {
-      title: "Production Monitoring",
-      desc: "Track every production step live and prevent delays.",
+      title: "Payroll Automation",
+      desc: "Automate salary calculations, deductions, and payslip generation effortlessly.",
     },
     {
-      title: "Quality Control & Defect Tracking",
-      desc: "Detect defects quickly and improve overall output quality.",
+      title: "Leave Management",
+      desc: "Streamline leave requests, approvals, and balances with automated tracking.",
     },
     {
-      title: "Vendor Management",
-      desc: "Manage suppliers, POs, and deliveries with full visibility.",
+      title: "AI HR Assistant",
+      desc: "Get instant answers to HR questions, automate repetitive tasks, and improve employee experience with AI.",
     },
     {
-      title: "Smart Reports & Analytics",
-      desc: "AI-powered insights that optimize factory performance.",
+      title: "Reports & Analytics",
+      desc: "Track key metrics, generate insights, and make data-driven decisions with comprehensive HR analytics.",
+    },
+    {
+      title: "Employee Benefits Management",
+      desc: "Manage benefits, claims, and reimbursements efficiently with automated tracking and approvals.",
     },
   ];
 
@@ -42,10 +46,13 @@ export default function FeatureSwitcher({setOpen}: any) {
         <div className="lg:col-span-2 p-8 flex flex-col justify-between productivity-card-content-holder-in-inventory-management">
           <div>
             <h3 className="text-[28px] leading-[33.6px] system-usage-card-title-text-in-inventory-management font-['Sequel_Sans'] font-normal text-brand-dark tracking-[-0.56px] mb-8">
-              You make the products. Our system manages the process.
+              You scale faster. We manage HR smarter.
             </h3>
 
-            <button onClick={() => setOpen(true)} className="button explore-more-in-features-section-in-inventory-management nav-links-in-inventory-management-get-in-touch type1 px-9 py-4 rounded-full bg-brand-purple text-brand-bg font-['Sequel_Sans'] text-base font-normal hover:bg-brand-purple/90 transition-colors">
+            <button
+              onClick={() => setOpen(true)}
+              className="button explore-more-in-features-section-in-inventory-management nav-links-in-inventory-management-get-in-touch type1 px-9 py-4 rounded-full bg-brand-purple text-brand-bg font-['Sequel_Sans'] text-base font-normal hover:bg-brand-purple/90 transition-colors"
+            >
               <span>Explore more</span>
             </button>
           </div>
@@ -70,7 +77,9 @@ export default function FeatureSwitcher({setOpen}: any) {
                   {/* TITLE */}
                   <h4
                     className={`text-lg font-['Sequel_Sans'] spradesheet-usage-subtext-in-inventory-management font-normal ${
-                      active === index ? "text-brand-purple row-materials-tracking-heading-in-inventory-management" : "text-brand-dark"
+                      active === index
+                        ? "text-brand-purple row-materials-tracking-heading-in-inventory-management"
+                        : "text-brand-dark"
                     }`}
                   >
                     {item.title}
