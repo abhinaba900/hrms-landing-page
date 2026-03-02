@@ -1011,6 +1011,11 @@ export default function Index() {
                 and overtime - all in one dashboard.
               </p>
             </div>
+            
+          </div>
+          <div className="grid grid-cols-1 mt-8 lg:grid-cols-2 gap-8 justify-center  relative problem-section-cards-holder-in-inventory-management">
+            
+            
             <div
               className="rounded-3xl border-[1.5px] border-brand-dark bg-brand-bg p-6 hover:shadow-[8px_8px_0_0_#000]"
               style={{
