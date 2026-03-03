@@ -28,11 +28,29 @@ const testimonials: TestimonialItem[] = [
   {
     id: 2,
     message:
-      "Working with PeopleMS has transformed our HR processes. The automation features have saved us countless hours every week.",
-    author: "Suresh M",
-    role: "Operations Manager",
-    company: "Generic Manufacturing Co.",
-    avatar: "/assets/ramesh_k_avatar.png",
+      "Attendance, payroll, and reporting are now structured and reliable, allowing our team to focus more on patient care and internal efficiency.",
+    author: "Dr. Mahesh",
+    role: "CEO",
+    company: "SathyaSai Hospital",
+    avatar: "/assets/Dr Mahesh - SSH.webp",
+  },
+  {
+    id: 3,
+    message:
+      "PeopleMS reduced manual work and improved clarity across payroll and attendance, making daily HR management faster and more dependable.",
+    author: "Nagadri",
+    role: "Founder",
+    company: "Zero and One",
+    avatar: "/assets/Zero and one - image.webp",
+  },
+  {
+    id: 4,
+    message:
+      "From attendance tracking to payroll, everything is now streamlined and transparent, helping our team operate with better consistency and control.",
+    author: "Amogh",
+    role: "CEO",
+    company: "Banna Sprays",
+    avatar: "/assets/Amogh - banna sprays.webp",
   },
 ];
 

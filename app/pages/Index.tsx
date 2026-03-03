@@ -700,24 +700,29 @@ export default function Index() {
 
             {/* Desktop Menu */}
             <div className="hidden lg:flex items-center gap-4">
-              {["Solution", "Features", "Benefits", "Customers", "Pricing"].map(
-                (label) => (
-                  <Link
-                    href={`#${label.toLowerCase()}`}
-                    key={label}
-                    type="button"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      document
-                        .getElementById(label.toLowerCase())
-                        ?.scrollIntoView({ behavior: "smooth" });
-                    }}
-                    className="px-5 py-2.5 rounded-full nav-links-in-inventory-management bg-brand-gray text-brand-dark font-['Sequel_Sans'] text-base font-normal hover:bg-brand-gray/50 transition-colors"
-                  >
-                    {label}
-                  </Link>
-                ),
-              )}
+              {[
+                "Problem",
+                "Features",
+                "Why PeopleMS",
+                "How it works",
+                "For whom?",
+                "Pricing",
+              ].map((label) => (
+                <Link
+                  href={`#${label.toLowerCase()}`}
+                  key={label}
+                  type="button"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document
+                      .getElementById(label.toLowerCase())
+                      ?.scrollIntoView({ behavior: "smooth" });
+                  }}
+                  className="px-5 py-2.5 rounded-full nav-links-in-inventory-management bg-brand-gray text-brand-dark font-['Sequel_Sans'] text-base font-normal hover:bg-brand-gray/50 transition-colors"
+                >
+                  {label}
+                </Link>
+              ))}
             </div>
 
             {/* Desktop CTA */}
