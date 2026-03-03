@@ -16,15 +16,7 @@ interface TestimonialItem {
 }
 
 const testimonials: TestimonialItem[] = [
-  {
-    id: 1,
-    message:
-      "Attendance, payroll, and leave approvals are now completely streamlined. What used to take days is handled automatically, and our team finally has clarity across HR operations.",
-    author: "Ramesh K",
-    role: "Founder",
-    company: "Banna Sprays",
-    avatar: "/assets/ramesh_k_avatar.png",
-  },
+  
   {
     id: 2,
     message:
