@@ -1407,7 +1407,7 @@ export default function Index() {
         <div className="max-w-7xl mx-auto px-0 lg:px-8 2xl:px-0 pricing-section-content-holder-in-inventory-management">
           <h2 className="text-[52px] leading-[62.4px] spradesheet-usage-text-in-inventory-management font-['Sequel_Sans'] font-normal text-brand-dark tracking-[-1.04px] text-center mb-4">
             Choose a Plan <br />
-            That Fits Your Factory
+            That Fits Your Company
           </h2>
           <p className="text-xl font-['Sequel_Sans'] pricing-section-subheading-in-inventory-management font-normal text-brand-dark text-center transformes-how-we-manage-production-subheader-in-inventory-management mb-[5rem]">
             Simple, transparent, and built for businesses of all sizes
@@ -1422,8 +1422,7 @@ export default function Index() {
                 Best for Small Teams
               </h3>
               <p className="text-xl font-['Sequel_Sans'] font-normal text-brand-dark leading-relaxed mb-8 plan-subheading-in-inventory-management">
-                Track stock, manage materials, and eliminate manual errors with
-                core inventory tools.
+               Perfect for teams starting with HR automation, managing attendance, payroll, and core HR tasks with ease.
               </p>
 
               <button
@@ -1440,11 +1439,10 @@ export default function Index() {
                 Pro Plan
               </p>
               <h3 className="text-[28px] leading-[33.6px] font-['Sequel_Sans'] font-normal text-brand-dark mb-6 plan-heading-in-inventory-management">
-                For Growing Manufacturers
+                Best for Growing Companies
               </h3>
               <p className="text-xl font-['Sequel_Sans'] font-normal text-brand-dark leading-relaxed mb-8 plan-subheading-in-inventory-management">
-                Unlock automation, advanced analytics, and workflow insights to
-                streamline every production stage.
+                Perfect for teams scaling their operations, with advanced HR tools, analytics, and integrations.
               </p>
 
               <button
@@ -1460,11 +1458,10 @@ export default function Index() {
                 Enterprise Plan
               </p>
               <h3 className="text-[28px] leading-[33.6px] font-['Sequel_Sans'] font-normal text-brand-dark mb-6 plan-heading-in-inventory-management">
-                For Large Scale Operations
+                Best for Large Companies
               </h3>
               <p className="text-xl font-['Sequel_Sans'] font-normal text-brand-dark leading-relaxed mb-8 plan-subheading-in-inventory-management">
-                Enjoy full customization, user management, dedicated support,
-                and system integrations built for scale.
+                Perfect for teams with complex HR needs, offering full customization, user management, and dedicated support.
               </p>
 
               <button
