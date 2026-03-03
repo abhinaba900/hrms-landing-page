@@ -16,24 +16,27 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   // 1. Basic Metadata
-  title:
-    "Smart Inventory Management Software for Manufacturers | Third Eye Creative",
+  title: "PeopleMS",
   description:
-    "Improve manufacturing efficiency with Third Eye Creative’s inventory software. Real-time tracking, analytics, alerts, and seamless workflows for faster production decisions.",
+    "PeopleMS – HRMS & Payroll Software for Growing Businesses in India",
+  authors: [{ name: "ThirdEye" }],
+  icons: {
+    icon: "/pmsFavicon.png",
+  },
 
   // 2. Open Graph (Facebook, LinkedIn, WhatsApp, Teams)
   openGraph: {
-    title: "Smart Inventory Management Software for Manufacturers",
+    title: "PeopleMS – HRMS & Payroll Software for Growing Businesses in India",
     description:
-      "Improve manufacturing efficiency with Third Eye Creative’s inventory software.",
+      "PeopleMS is a modern HRMS and payroll software designed for growing businesses. Manage attendance, payroll, compliance, performance & employee data in one powerful people management system.",
     url: "https://smartfactory.thirdeyegfx.com", // Your actual domain
-    siteName: "Third Eye Creative",
+    siteName: "PeopleMS",
     images: [
       {
-        url: "/assets/Website.webp", // Path to your image in public folder
+        url: "/pmsOgImagePreview.webp",
         width: 1200,
         height: 630,
-        alt: "Third Eye Creative Dashboard Preview",
+        alt: "PeopleMS Dashboard Preview",
       },
     ],
     locale: "en_US",
@@ -43,9 +46,11 @@ export const metadata = {
   // 3. Twitter Card (Twitter/X)
   twitter: {
     card: "summary_large_image",
-    title: "Smart Inventory Management Software",
-    description: "Improve manufacturing efficiency with Third Eye Creative.",
-    images: ["/assets/Website.webp"], // Same image path
+    site: "@ThirdEye",
+    title: "PeopleMS – HRMS & Payroll Software for Growing Businesses in India",
+    description:
+      "PeopleMS is a modern HRMS and payroll software designed for growing businesses.",
+    images: ["/pmsOgImagePreview.webp"],
   },
 
   // 4. Base URL (Required for relative image paths to work in production)
@@ -60,8 +65,8 @@ export default async function RootLayout({
   const deviceClass = isTablet
     ? "is-tablet"
     : isMobile
-    ? "is-mobile"
-    : "is-desktop";
+      ? "is-mobile"
+      : "is-desktop";
   console.log(deviceClass);
 
   return (
