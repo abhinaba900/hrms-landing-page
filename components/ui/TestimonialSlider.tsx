@@ -51,11 +51,11 @@ export default function TestimonialSlider() {
   };
 
   return (
-    <section className="py-24 bg-[#FCFFF4] overflow-hidden">
+    <section className="py-16 md:py-24 bg-[#FCFFF4] overflow-hidden">
       <div className="max-w-[1312px] mx-auto px-6 lg:px-16">
-        <div className="flex flex-col items-center text-center mb-16">
-          <h2 className="text-[52px] leading-[62.4px] center-align-text spradesheet-usage-text-in-inventory-management font-['Sequel_Sans'] font-normal text-brand-dark tracking-[-1.04px] mb-12">
-            Trusted by teams that <br /> rely on us
+        <div className="flex flex-col items-center text-center mb-10 md:mb-16">
+          <h2 className="text-3xl md:text-[52px] md:leading-[62.4px] center-align-text spradesheet-usage-text-in-inventory-management font-['Sequel_Sans'] font-normal text-brand-dark tracking-[-1.04px] mb-8 md:mb-12">
+            Trusted by teams that <br className="hidden md:block" /> rely on us
           </h2>
 
           <div className="text-brand-purple mb-8">

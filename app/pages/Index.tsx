@@ -75,7 +75,9 @@ const ZohoValidationScript: React.FC = () => {
 
     function zf_CheckMandatory() {
       for (let i = 0; i < zf_MandArray.length; i++) {
-        const fieldObj = document.forms["contact_form"][zf_MandArray[i]];
+        const fieldObj = (document.forms as any)["contact_form"][
+          zf_MandArray[i]
+        ];
         if (fieldObj) {
           if (fieldObj.value.replace(/^\s+|\s+$/g, "").length === 0) {
             fieldObj.focus();
@@ -90,7 +92,9 @@ const ZohoValidationScript: React.FC = () => {
     function zf_ValidCheck() {
       let isValid = true;
       for (let ind = 0; ind < zf_FieldArray.length; ind++) {
-        const fieldObj = document.forms["contact_form"][zf_FieldArray[ind]];
+        const fieldObj = (document.forms as any)["contact_form"][
+          zf_FieldArray[ind]
+        ];
         if (fieldObj) {
           const checkType = fieldObj.getAttribute("checktype");
           if (checkType === "c1") {
@@ -904,7 +908,7 @@ export default function Index() {
             <HorizontalScroller
               data={[images]}
               isHoverable={false}
-              renderCard={(partner: partner, index) => (
+              renderCard={(partner: any, index) => (
                 <div
                   key={index}
                   className={`w-[200px]  flex flex-col justify-center items-center gap-4`}
@@ -1096,30 +1100,30 @@ export default function Index() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-24 bg-[#FCFFF4]">
-        <div className="max-w-[1440px] mx-auto px-6 lg:px-18">
-          <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-16 gap-8">
+      <section className="py-16 md:py-24 bg-[#FCFFF4] why-chose-people-ms-section">
+        <div className="max-w-[1440px] mx-auto px-6 lg:px-18 why-chose-people-ms-container">
+          <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-10 md:mb-16 gap-6 md:gap-8">
             <div className="max-w-[800px]">
-              <h2 className="text-[52px] why-chose-people-ms-heading-in-inventory-management font-['Sequel_Sans'] font-[420] text-[#0A0F0A] leading-[120%] tracking-[-1.04px] mb-4">
+              <h2 className="text-3xl md:text-[52px] why-chose-people-ms-heading-in-inventory-management font-['Sequel_Sans'] font-[420] text-[#0A0F0A] leading-[120%] tracking-[-1.04px] mb-4">
                 Why choose PeopleMS?
               </h2>
-              <p className="text-[20px] why-chose-people-ms-subtext-in-inventory-management font-['Sequel_Sans'] font-[410] text-[#0A0F0A] leading-[140%]">
+              <p className="text-base md:text-[20px] why-chose-people-ms-subtext-in-inventory-management font-['Sequel_Sans'] font-[410] text-[#0A0F0A] leading-[140%]">
                 Built to be secure, flexible, and scalable - PeopleMS adapts to
                 your team as you grow.
               </p>
             </div>
             <button
               onClick={() => setOpen(true)}
-              className="button video-section-button-in-inventory-management nav-links-in-inventory-management-get-in-touch nav-links-in-inventory-management-get-in-touch type1 px-9 py-4 rounded-full bg-brand-purple text-brand-bg font-['Sequel_Sans'] text-base font-normal  hover:bg-brand-purple/90 transition-colors"
+              className="button video-section-button-in-inventory-management nav-links-in-inventory-management-get-in-touch type1 px-9 py-4 rounded-full bg-brand-purple text-brand-bg font-['Sequel_Sans'] text-base font-normal  hover:bg-brand-purple/90 transition-colors w-full md:w-auto"
             >
               <span>Explore more</span>
             </button>
           </div>
 
           {/* Cards Grid with Fillet Effect */}
-          <div className="relative mt-12 overflow-hidden rounded-[12px] lg:rounded-none lg:overflow-visible">
+          <div className="relative mt-8 md:mt-12 overflow-hidden rounded-[12px] lg:rounded-none lg:overflow-visible">
             {/* Background container for the fillet borders */}
-            <div className="flex flex-col lg:flex-row w-full bg-[#000000] lg:pt-[1.5px] lg:gap-[2px]">
+            <div className="flex flex-col lg:flex-row w-full bg-[#000000] lg:pt-[1.5px] gap-[1px] lg:gap-[2px]">
               {[
                 {
                   icon: "/assets/99.9-Uptime.webp",

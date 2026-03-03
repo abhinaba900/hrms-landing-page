@@ -33,11 +33,11 @@ export default function HowItWorks() {
 
   return (
     <section className="relative py-24 bg-brand-bg overflow-hidden why-manufactures-love-us-in-inventory-management">
-      <div className="max-w-[1280px] mx-auto px-6 lg:px-2 flex flex-col items-center relative z-1">
-        <h2 className="text-[52px] hidden lg:block spradesheet-usage-text-in-inventory-management leading-[62.4px] font-['Sequel_Sans'] font-normal text-brand-dark tracking-[-1.04px] mb-4">
+      <div className="max-w-[1280px] mx-auto px-6 lg:px-2 flex flex-col items-center relative z-1 how-it-works-section-container">
+        <h2 className="text-3xl md:text-[52px] spradesheet-usage-text-in-inventory-management leading-[1.2] font-['Sequel_Sans'] font-normal text-brand-dark tracking-[-1.04px] mb-4 text-center">
           How it Works
         </h2>
-        <p className="text-xl md:text-[20px] video-section-subtext-text-in-inventory-management font-['Sequel_Sans'] font-[405] text-brand-dark text-center mb-20 tracking-wide">
+        <p className="text-lg md:text-[20px] video-section-subtext-text-in-inventory-management font-['Sequel_Sans'] font-[405] text-brand-dark text-center mb-12 md:mb-20 tracking-wide">
           Simple. Fast. Powerful.
         </p>
 

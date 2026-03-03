@@ -21,11 +21,7 @@ const BASE_AUDIENCES = [
 ];
 
 /* ─── Constants ──────────────────────────────────────────────────────────── */
-const ACTIVE_W = 340;
-const INACTIVE_W = 260;
-const GAP = 16;
 const DUR = 450;
-
 const EASE = `cubic-bezier(0.25, 0.46, 0.45, 0.94)`;
 const N = BASE_AUDIENCES.length;
 
@@ -43,7 +39,35 @@ const ITEMS = [
 /* ─── Component ──────────────────────────────────────────────────────────── */
 export default function WhoIsPeopleMS() {
   const [activeIdx, setActiveIdx] = useState(N);
-  const [skipAnim, setSkipAnim] = useState(false); // New state to prevent glitching on jump
+  const [skipAnim, setSkipAnim] = useState(false);
+  const [cardConfig, setCardConfig] = useState({
+    activeW: 340,
+    inactiveW: 260,
+    gap: 16,
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+      if (width < 768) {
+        // Mobile: Show one main card with small padding on sides
+        // activeW is almost screen width minus some margin
+        const mobileActiveW = Math.min(width - 64, 340);
+        setCardConfig({
+          activeW: mobileActiveW,
+          inactiveW: mobileActiveW * 0.8,
+          gap: 12,
+        });
+      } else if (width < 1024) {
+        setCardConfig({ activeW: 310, inactiveW: 240, gap: 14 });
+      } else {
+        setCardConfig({ activeW: 340, inactiveW: 260, gap: 16 });
+      }
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const containerRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
@@ -53,12 +77,17 @@ export default function WhoIsPeopleMS() {
   const autoTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   /* ── Centering math ──────────────────────────────────────────────────── */
-  const getTranslateX = useCallback((index: number): number => {
-    const containerW = containerRef.current?.clientWidth ?? 0;
-    const leftOffset = index * (INACTIVE_W + GAP);
-    const activeCardCenter = INACTIVE_W / 2 + (ACTIVE_W - INACTIVE_W) / 2;
-    return containerW / 2 - leftOffset - activeCardCenter;
-  }, []);
+  const getTranslateX = useCallback(
+    (index: number): number => {
+      const containerW = containerRef.current?.clientWidth ?? 0;
+      const leftOffset = index * (cardConfig.inactiveW + cardConfig.gap);
+      const activeCardCenter =
+        cardConfig.inactiveW / 2 +
+        (cardConfig.activeW - cardConfig.inactiveW) / 2;
+      return containerW / 2 - leftOffset - activeCardCenter;
+    },
+    [cardConfig],
+  );
 
   /* ── Apply transform ─────────────────────────────────────────────────── */
   const applyTransform = useCallback(
@@ -85,7 +114,6 @@ export default function WhoIsPeopleMS() {
   /* ── Transition-end: silent jump for seamless loop ───────────────────── */
   const handleTransitionEnd = useCallback(
     (e: React.TransitionEvent<HTMLDivElement>) => {
-      // Ignore transition ends from the individual cards
       if (e.target !== trackRef.current) return;
 
       let nextIdx = activeIdx;
@@ -95,11 +123,10 @@ export default function WhoIsPeopleMS() {
         nextIdx = activeIdx - N;
       }
 
-      // If a jump is needed
       if (nextIdx !== activeIdx) {
-        setSkipAnim(true); // Disable card animations
+        setSkipAnim(true);
         setActiveIdx(nextIdx);
-        applyTransform(nextIdx, false); // Snap the track instantly
+        applyTransform(nextIdx, false);
       }
     },
     [activeIdx, applyTransform],
@@ -108,8 +135,6 @@ export default function WhoIsPeopleMS() {
   /* ── Re-enable animations immediately after the jump ─────────────────── */
   useEffect(() => {
     if (skipAnim) {
-      // Double requestAnimationFrame ensures the browser paints the "transition: none"
-      // frame before we turn animations back on for the next slide.
       let raf1: number;
       let raf2: number;
       raf1 = requestAnimationFrame(() => {
@@ -128,10 +153,8 @@ export default function WhoIsPeopleMS() {
   useEffect(() => {
     const recalc = () => applyTransform(activeIdx, false);
     recalc();
-    window.addEventListener("resize", recalc);
-    return () => window.removeEventListener("resize", recalc);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [cardConfig]);
 
   /* ── Auto-play ───────────────────────────────────────────────────────── */
   const scheduleAutoPlay = useCallback(() => {
@@ -178,20 +201,20 @@ export default function WhoIsPeopleMS() {
 
   /* ─────────────────────────────────────────────────────────────────────── */
   return (
-    <section className="py-24 pb-0 bg-[#FCFFF4] overflow-hidden who-is-peoplems-for-section">
-      <div className="max-w-[1312px] mx-auto px-6 lg:px-16 mb-14">
+    <section className="py-16 md:py-24 pb-0 md:pb-0 bg-[#FCFFF4] overflow-hidden who-is-peoplems-for-section">
+      <div className="max-w-[1312px] mx-auto px-6 lg:px-16 mb-10 md:mb-14">
         <div className="flex flex-col items-center text-center">
           <div className="relative inline-block">
             <img
               src="/assets/who-is-people-ms-for-heading-right-top-image.png"
               alt="Crown"
-              className="absolute -top-10 -right-24 w-[100px] h-auto pointer-events-none"
+              className="absolute -top-6 md:-top-10 -right-16 md:-right-24 w-16 md:w-[100px] h-auto pointer-events-none"
             />
-            <h2 className="text-[52px] who-is-peoplems-title-size spradesheet-usage-text-in-inventory-management leading-[62.4px] font-['Sequel_Sans'] font-normal text-brand-dark tracking-[-1.04px]">
+            <h2 className="text-3xl md:text-[52px] who-is-peoplems-title-size spradesheet-usage-text-in-inventory-management leading-[1.2] font-['Sequel_Sans'] font-normal text-brand-dark tracking-[-1.04px]">
               Who is PeopleMS for?
             </h2>
           </div>
-          <p className="text-[18px] who-is-peoplems-subtext font-['Sequel_Sans'] font-normal text-brand-dark mt-4 max-w-[560px] ">
+          <p className="text-base md:text-[18px] who-is-peoplems-subtext font-['Sequel_Sans'] font-normal text-brand-dark mt-4 max-w-[560px] ">
             Designed to adapt across industries, team sizes, and work models.
           </p>
         </div>
@@ -199,7 +222,7 @@ export default function WhoIsPeopleMS() {
 
       <div
         ref={containerRef}
-        className="relative w-full h-[420px] overflow-hidden"
+        className="relative w-full h-[480px] md:h-[420px] overflow-hidden"
         style={{ cursor: isDragging.current ? "grabbing" : "grab" }}
         onMouseDown={(e) => onPointerDown(e.clientX)}
         onMouseMove={(e) => onPointerMove(e.clientX)}
@@ -214,7 +237,7 @@ export default function WhoIsPeopleMS() {
         <div
           ref={trackRef}
           className="flex items-start will-change-transform"
-          style={{ gap: `${GAP}px` }}
+          style={{ gap: `${cardConfig.gap}px` }}
           onTransitionEnd={handleTransitionEnd}
         >
           {ITEMS.map((item, index) => {
@@ -241,7 +264,9 @@ export default function WhoIsPeopleMS() {
                 }}
                 className="flex-shrink-0 rounded-[24px] overflow-hidden who-is-peoplems-card"
                 style={{
-                  width: isActive ? `${ACTIVE_W}px` : `${INACTIVE_W}px`,
+                  width: isActive
+                    ? `${cardConfig.activeW}px`
+                    : `${cardConfig.inactiveW}px`,
                   transition: cardTransition,
                   background: isActive
                     ? "rgba(252, 223, 100, 0.7)"

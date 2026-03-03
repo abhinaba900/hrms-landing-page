@@ -1081,6 +1081,39 @@ rect {
     line-height: 140%;
   }
 
+  .why-chose-people-ms-heading-in-inventory-management {
+    font-size: 1.5rem !important;
+    line-height: 120% !important;
+    letter-spacing: -0.02em !important;
+  }
+
+  .why-chose-people-ms-subtext-in-inventory-management {
+    font-size: 1rem !important;
+    line-height: 140% !important;
+  }
+
+  .who-is-peoplems-title-size {
+    font-size: 1.5rem !important;
+    line-height: 120% !important;
+    letter-spacing: -0.02em !important;
+  }
+
+  .who-is-peoplems-subtext {
+    font-size: 1rem !important;
+    line-height: 140% !important;
+    margin-top: 0.75rem !important;
+  }
+
+  .testimonial-slider-text-in-inventory-management {
+    font-size: 1.125rem !important;
+    line-height: 140% !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .testimonial-slider-author-in-inventory-management {
+    font-size: 0.875rem !important;
+  }
+
   .heading-and-subtext-content-holder-in-inventory-management {
     gap: 0;
     margin-bottom: 2rem;
@@ -1929,4 +1962,47 @@ body.is-tablet .circle-button::after {
 
 .who-is-peoplems-card {
   cursor: pointer;
+}
+
+/* =========================================
+   IPAD PRO / TABLET REFINEMENTS
+   ========================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .how-it-works-section-container,
+  .why-chose-people-ms-container {
+    padding-inline: 22px !important;
+  }
+
+  /* How It Works: Center text and show/align arrows */
+  .how-it-works-section-container .flex-col.items-center {
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .how-it-works-section-container .max-w-\[280px\] {
+    max-width: 100% !important;
+  }
+
+  .how-it-works-section-container .hidden.lg\:block {
+    display: block !important;
+    position: absolute !important;
+    top: 30px !important;
+    right: -10% !important;
+    width: 60px !important;
+  }
+
+  /* Ensure h3 and p don't have excessive right padding preventing centering */
+  .how-it-works-section-container h3,
+  .how-it-works-section-container p {
+    padding-right: 0 !important;
+  }
+}
+
+/* Specific fix for 1024px iPad Pro to ensure arrow doesn't overlap next step number */
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .how-it-works-section-container .hidden.lg\:block {
+    right: -15% !important;
+    width: 80px !important;
+  }
 }
