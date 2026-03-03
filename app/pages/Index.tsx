@@ -1461,7 +1461,7 @@ export default function Index() {
                 Best for Large Companies
               </h3>
               <p className="text-xl font-['Sequel_Sans'] font-normal text-brand-dark leading-relaxed mb-8 plan-subheading-in-inventory-management">
-                Perfect for teams with complex HR needs, offering full customization, user management, and dedicated support.
+                Perfect for large organizations with complex HR needs, offering full customization, user management, and dedicated support.
               </p>
 
               <button
