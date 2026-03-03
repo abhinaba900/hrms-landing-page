@@ -13,7 +13,14 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Inter', '-apple-system', 'system-ui', 'Roboto', 'Helvetica', 'sans-serif'],
+        sans: [
+          "Inter",
+          "-apple-system",
+          "system-ui",
+          "Roboto",
+          "Helvetica",
+          "sans-serif",
+        ],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -26,7 +33,7 @@ export default {
           foreground: "hsl(var(--primary-foreground))",
         },
         brand: {
-          purple: "#772BF2",
+          purple: "#5048E5",
           pink: "#EC4B7B",
           yellow: "#FCB336",
           "yellow-light": "#FCD569",

@@ -4,19 +4,19 @@ import { useRef, useState, useEffect, useCallback } from "react";
 
 /* ─── Data ──────────────────────────────────────────────────────────────── */
 const BASE_AUDIENCES = [
-  { label: "Startups", image: "/assets/who-is-people-ms-for-startups.jpg" },
+  { label: "Startups", image: "/assets/who-is-people-ms.png" },
   {
     label: "Remote teams",
-    image: "/assets/who-is-people-ms-for-remote-teams.jpg",
+    image: "/assets/who-is-people-ms.png",
   },
-  { label: "SMEs", image: "/assets/who-is-people-ms-for-smes.jpg" },
+  { label: "SMEs", image: "/assets/who-is-people-ms.png" },
   {
     label: "IT & software",
-    image: "/assets/who-is-people-ms-for-it-software.jpg",
+    image: "/assets/who-is-people-ms.png",
   },
   {
     label: "Manufacturing",
-    image: "/assets/who-is-people-ms-for-manufacturing.jpg",
+    image: "/assets/who-is-people-ms.png",
   },
 ];
 
@@ -142,7 +142,7 @@ export default function WhoIsPeopleMS() {
         applyTransform(next, true);
         return next;
       });
-    }, 3500);
+    }, 2000);
   }, [applyTransform]);
 
   useEffect(() => {

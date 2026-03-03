@@ -846,25 +846,25 @@ export default function Index() {
                 fillRule="evenodd"
                 clipRule="evenodd"
                 d="M95.3525 106.66C106.911 110.915 119.01 114.414 128.808 122.196C129.393 122.657 130.239 122.564 130.703 121.983C131.162 121.399 131.067 120.552 130.484 120.086C120.456 112.124 108.104 108.481 96.2764 104.129C95.5782 103.868 94.8008 104.229 94.5473 104.929C94.2889 105.626 94.6544 106.4 95.3525 106.66Z"
-                fill="#772BF2"
+                fill="#5048E5"
               />
               <path
                 fillRule="evenodd"
                 clipRule="evenodd"
                 d="M100.064 89.3117C104.83 87.206 109.643 86.0534 114.859 86.4487C115.604 86.5054 116.249 85.9471 116.306 85.2041C116.357 84.4595 115.795 83.8096 115.056 83.7544C109.384 83.3241 104.152 84.5511 98.9715 86.838C98.2885 87.1381 97.9796 87.9354 98.285 88.6197C98.5853 89.301 99.3865 89.6128 100.064 89.3117Z"
-                fill="#772BF2"
+                fill="#5048E5"
               />
               <path
                 fillRule="evenodd"
                 clipRule="evenodd"
                 d="M102.366 49.2399C105.963 44.0915 110.759 40.7417 116.887 39.234C117.61 39.0558 118.051 38.3232 117.867 37.5976C117.688 36.8738 116.953 36.4293 116.23 36.6075C109.447 38.2777 104.132 41.9819 100.149 47.6822C99.7208 48.2915 99.8758 49.1378 100.485 49.5665C101.099 49.9975 101.943 49.8509 102.366 49.2399Z"
-                fill="#772BF2"
+                fill="#5048E5"
               />
               <path
                 fillRule="evenodd"
                 clipRule="evenodd"
                 d="M47.5409 21.9662C46.1548 22.7955 44.8405 23.7501 43.6316 24.8315C43.0929 25.3128 42.072 26.3779 41.6131 27.4336C41.12 28.5569 41.184 29.6684 42.0227 30.5288C43.1372 31.6703 44.235 31.9659 45.2027 31.8359C46.1341 31.7118 47.0208 31.1456 47.767 30.2354C49.1924 28.4954 50.1096 25.4055 50.3035 23.5297C51.7307 22.7984 53.2255 22.2037 54.7657 21.7471C66.2343 18.3463 78.9937 25.4009 86.1294 38.7777C88.6267 43.4607 87.9513 51.2743 86.2404 59.3695C83.5785 71.9742 78.1986 85.2309 76.7477 89.1573C76.3918 90.1281 76.2878 90.7406 76.2999 90.8742C76.3474 91.5272 76.722 91.8203 76.9996 91.9777C77.403 92.2014 77.773 92.2363 78.0976 92.1872C78.5373 92.1184 78.9609 91.8775 79.2839 91.3926C79.4601 91.1243 79.6186 90.7209 79.7565 90.28C79.8483 89.9732 79.8988 89.6209 80.0336 89.424C80.9024 88.1677 81.8419 86.9721 82.7743 85.7634C85.8976 81.6958 89.3834 78.0746 93.0919 74.536C104.876 63.2903 116.686 51.1893 131.951 44.768C132.635 44.4797 132.959 43.6879 132.667 42.9993C132.38 42.3125 131.588 41.9886 130.899 42.2756C115.329 48.8226 103.245 61.1082 91.2271 72.5761C88.0729 75.5868 85.0753 78.6567 82.3174 81.9965C84.7577 75.2558 87.8735 65.8354 89.438 57.0928C90.8298 49.3179 90.9343 42.0625 88.5076 37.5101C80.6904 22.8561 66.5518 15.4287 53.9918 19.1558C52.6485 19.5551 51.3299 20.0486 50.059 20.6381C47.9889 9.24845 37.9332 1.53315 26.3551 2.68932C25.6119 2.76246 25.0745 3.42562 25.1493 4.16715C25.2293 4.91044 25.8903 5.45225 26.6335 5.37911C37.0667 4.33749 46.0755 11.5224 47.5409 21.9662ZM47.2001 25.4264C46.5885 25.8702 46.0002 26.346 45.4307 26.851C45.1279 27.123 44.5823 27.6584 44.2305 28.2446C44.1498 28.3825 44.0663 28.613 44.03 28.7204C44.3242 29.0148 44.572 29.193 44.8351 29.1567C45.1633 29.1136 45.4169 28.8351 45.6784 28.5165C46.3358 27.7174 46.8587 26.5393 47.2001 25.4264Z"
-                fill="#772BF2"
+                fill="#5048E5"
               />
             </svg>
 
@@ -894,7 +894,7 @@ export default function Index() {
       </section>
 
       {/* Logo Carousel */}
-      <section className="py-16 bg-[#f5f9f5] horizontal-scroll-parent-in-inventory-management">
+      <section className="py-16 bg-[#FCFFF4] horizontal-scroll-parent-in-inventory-management">
         <div className="max-w-7xl mx-auto px-16 scroll-of-horizontal-in-inventory-management">
           <p className="text-2xl font-['Sequel_Sans'] font-normal text-brand-dark text-center mb-12 trust-indecation-in-inventory-management">
             Trusted by 10+ industrial companies
@@ -927,7 +927,7 @@ export default function Index() {
       {/* Problem Section */}
       <section
         id="solution"
-        className="py-20 bg-[#f5f9f5] problem-section-parent-in-inventory-management"
+        className="py-20 bg-[#FCFFF4] problem-section-parent-in-inventory-management"
       >
         <div className="max-w-7xl mx-auto px-16 problem-section-content-holder-in-inventory-management">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-[5rem] heading-and-subtext-content-holder-in-inventory-management">
@@ -1194,7 +1194,7 @@ export default function Index() {
       {/* Video Section */}
       {/* <section
         id="demo"
-        className="py-24 bg-[#f5f9f5] video-section-parent-in-inventory-management"
+        className="py-24 bg-[#FCFFF4] video-section-parent-in-inventory-management"
       >
         <div className="max-w-7xl mx-auto px-16 text-center video-section-content-holder-in-inventory-management">
           <h2 className="text-[52px] hidden lg:block spradesheet-usage-text-in-inventory-management leading-[62.4px] font-['Sequel_Sans'] font-normal text-brand-dark tracking-[-1.04px] mb-4">
@@ -1244,7 +1244,7 @@ export default function Index() {
                         fillRule="evenodd"
                         clipRule="evenodd"
                         d="M30.1378 16.983L1.58664 0.237396C1.32554 0.0829958 1.02893 0.00112152 0.726837 0H0.721837C0.419459 0.00121443 0.122837 0.0830958 -0.138529 0.237496C-0.401695 0.389996 -0.620129 0.610896 -0.771529 0.877396C-0.922929 1.14396 -1.00179 1.44669 -1 1.75446V35.2453C-1.00121 35.5533 -0.922196 35.8561 -0.771129 36.1231C-0.620063 36.3901 -0.402329 36.6118 -0.139796 36.7658C0.122804 36.9198 0.420737 37.0006 0.723804 37C1.02687 36.9994 1.32454 36.9175 1.58654 36.7624L30.1378 20.0168C30.3999 19.8631 30.6176 19.642 30.769 19.3757C30.9203 19.1094 31 18.8074 31 18.4999C31 18.1924 30.9203 17.8903 30.769 17.6241C30.6176 17.3578 30.3999 17.1367 30.1378 16.983Z"
-                        fill="#772BF2"
+                        fill="#5048E5"
                       />
                     </svg>
                   </div>
@@ -1387,7 +1387,7 @@ export default function Index() {
       {/* Pricing Section */}
       {/* <section
         id="pricing"
-        className="py-24 bg-[#f5f9f5] pricing-section-in-inventory-management pt-10 pb-50"
+        className="py-24 bg-[#FCFFF4] pricing-section-in-inventory-management pt-10 pb-50"
       >
         <div className="max-w-7xl mx-auto px-0 lg:px-8 2xl:px-0 pricing-section-content-holder-in-inventory-management">
           <h2 className="text-[52px] leading-[62.4px] spradesheet-usage-text-in-inventory-management font-['Sequel_Sans'] font-normal text-brand-dark tracking-[-1.04px] text-center mb-4">
@@ -1464,7 +1464,7 @@ export default function Index() {
       </section> */}
 
       {/* CTA Section */}
-      <section className="relative cta-section-in-inventory-management z-1 py-20 mx-16 mb-24 bg-[#f5f9f5] rounded-[32px] overflow-hidden  everything-you-need-text-in-inventory-management">
+      <section className="relative cta-section-in-inventory-management z-1 py-20 mx-16 mb-24 bg-[#FCFFF4] rounded-[32px] overflow-hidden  everything-you-need-text-in-inventory-management">
         <img
           src="assets/ready-to-take-control-of-your-inventory-left-icon.svg"
           className="absolute top-0 in-mobile-not-visible"

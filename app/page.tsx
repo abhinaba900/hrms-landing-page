@@ -7,9 +7,8 @@ import { TooltipProvider } from "@/app/components/ui/tooltip";
 import Index from "./pages/Index";
 import ScrollProgressButton from "@/components/ui/ScrollProgressButton";
 
-
 const page = () => (
-  <div className="bg-[#f5f9f5]">
+  <div className="bg-[#FCFFF4]">
     <TooltipProvider>
       <Toaster />
       <Sonner />
@@ -18,6 +17,5 @@ const page = () => (
     </TooltipProvider>
   </div>
 );
-
 
 export default page;

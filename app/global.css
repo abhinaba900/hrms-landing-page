@@ -272,8 +272,8 @@ rect {
 .button {
   cursor: pointer;
   position: relative;
-  color: #f5f9f5;
-  background: #772bf2;
+  color: #fcfff4;
+  background: #5048e5;
   border-radius: 2.125rem;
   overflow: hidden;
   height: 56px;
@@ -281,7 +281,7 @@ rect {
 }
 
 .button:hover {
-  background: #f5f9f5;
+  background: #fcfff4;
 }
 
 .button:hover span {
@@ -292,7 +292,7 @@ rect {
 
 .button::after {
   content: "";
-  background: #f5f9f5;
+  background: #fcfff4;
   border: 2px solid #0a0f0a;
   border-radius: 2.125rem;
   color: #0a0f0a;
@@ -316,7 +316,7 @@ rect {
   cursor: pointer;
   position: relative;
   color: #0a0f0a;
-  background: #f5f9f5;
+  background: #fcfff4;
   border-radius: 2.125rem;
   overflow: hidden;
   height: 56px;
@@ -325,19 +325,19 @@ rect {
 }
 
 .button2:hover {
-  border: 2px solid #772bf2;
-  background: #772bf2;
+  border: 2px solid #5048e5;
+  background: #5048e5;
 }
 
 .button2:hover span {
   position: relative;
   z-index: 2; /* keep text above animation */
-  color: #f5f9f5;
+  color: #fcfff4;
 }
 
 .button2::after {
   content: "";
-  background: #772bf2;
+  background: #5048e5;
   border: none;
   border-radius: 2.125rem;
   color: #0a0f0a;
@@ -350,7 +350,7 @@ rect {
   clip-path: circle(0% at 50% 100%);
   transition: all cubic-bezier(0, 0.96, 0.58, 1.1) 0.8s;
   z-index: 1; /* visible */
-  border: 2px solid #772bf2;
+  border: 2px solid #5048e5;
 }
 
 .button2:hover::after {
@@ -361,7 +361,7 @@ rect {
   border: none !important;
 }
 .white-border-remover-in-inventory-management {
-  border: 2px solid #f5f9f5;
+  border: 2px solid #fcfff4;
   font-family: var(--font-family-sequel-sans-bold-display) !important;
   font-weight: 425 !important;
 
@@ -369,11 +369,11 @@ rect {
 }
 .white-border-remover-in-inventory-management:hover,
 .white-border-remover-in-inventory-management:hover::after {
-  border: 2px solid #f5f9f5;
+  border: 2px solid #fcfff4;
 }
 
 .black-border-remover-in-inventory-management {
-  border: 2px solid #f5f9f5 !important;
+  border: 2px solid #fcfff4 !important;
   font-family: var(--font-family-sequel-sans-bold-display) !important;
   font-weight: 425 !important;
 }
@@ -381,8 +381,8 @@ rect {
 .circle-button {
   cursor: pointer;
   position: relative;
-  color: #f5f9f5;
-  background: #f5f9f5;
+  color: #fcfff4;
+  background: #fcfff4;
   border-radius: 50%;
   overflow: hidden;
   z-index: 0;
@@ -392,7 +392,7 @@ rect {
 /* Reveal Animation Layer */
 .circle-button::after {
   content: "";
-  background: #772bf2;
+  background: #5048e5;
   position: absolute;
   inset: 0;
   clip-path: circle(0% at 50% 100%);
@@ -564,7 +564,7 @@ rect {
   font-size: 0.875rem; /* 14px */
   line-height: 140%;
   letter-spacing: 0%;
-  color: #f5f9f5;
+  color: #fcfff4;
 }
 
 .why-manufacturers-love-us-header-in-inventory-management {
@@ -726,8 +726,8 @@ rect {
 }
 
 .border-apply-in-inventory-management:hover {
-  border: 2.5px solid #772bf2;
-  background-color: #772bf2;
+  border: 2.5px solid #5048e5;
+  background-color: #5048e5;
 }
 
 .popup-section-left-content-heading {
@@ -833,7 +833,7 @@ rect {
   transform: translateY(0);
   opacity: 1;
 
-  background-color: #f5f9f5;
+  background-color: #fcfff4;
 }
 
 /* When scrolling DOWN → hide smoothly */
@@ -1001,11 +1001,11 @@ rect {
   }
 
   .button:after {
-    background: #772bf2 !important;
+    background: #5048e5 !important;
   }
 
   .button2:after {
-    background: #f5f9f5 !important;
+    background: #fcfff4 !important;
   }
 
   .black-border-remover-in-inventory-management {
@@ -1134,8 +1134,8 @@ rect {
     font-size: 1rem;
     line-height: 140%;
     margin-bottom: 1rem;
-    font-family: var(--font-family-sequel-sans-regular-display);
-    font-weight: 405;
+    font-family: var(--font-family-sequel-sans-book-display) !important;
+    font-weight: 405 !important;
   }
 
   .video-section-button-in-inventory-management {
@@ -1261,7 +1261,7 @@ rect {
   }
 
   .circle-button:hover svg path {
-    fill: #772bf2;
+    fill: #5048e5;
   }
 
   .play-button-in-video-in-inventory-management {
@@ -1479,11 +1479,11 @@ rect {
   }
 
   .button:after {
-    background: #772bf2 !important;
+    background: #5048e5 !important;
   }
 
   .button2:after {
-    background: #f5f9f5 !important;
+    background: #fcfff4 !important;
   }
 
   .black-border-remover-in-inventory-management {
@@ -1632,11 +1632,11 @@ rect {
   }
 
   .button:after {
-    background: #772bf2 !important;
+    background: #5048e5 !important;
   }
 
   .button2:after {
-    background: #f5f9f5 !important;
+    background: #fcfff4 !important;
   }
 
   .black-border-remover-in-inventory-management {
@@ -1717,11 +1717,11 @@ body.is-tablet .circle-button:hover svg path {
 
 /* 4. Specific Button Background Colors */
 body.is-tablet .button:after {
-  background: #772bf2 !important;
+  background: #5048e5 !important;
 }
 
 body.is-tablet .button2:after {
-  background: #f5f9f5 !important;
+  background: #fcfff4 !important;
 }
 
 /* 5. Text & Spans Z-Index */
@@ -1789,11 +1789,11 @@ body.is-tablet .circle-button::after {
   }
 
   .button:after {
-    background: #772bf2 !important;
+    background: #5048e5 !important;
   }
 
   .button2:after {
-    background: #f5f9f5 !important;
+    background: #fcfff4 !important;
   }
 
   .black-border-remover-in-inventory-management {

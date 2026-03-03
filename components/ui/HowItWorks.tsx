@@ -33,7 +33,7 @@ export default function HowItWorks() {
 
   return (
     <section className="relative py-24 bg-brand-bg overflow-hidden why-manufactures-love-us-in-inventory-management">
-      <div className="max-w-[1280px] mx-auto px-6 lg:px-2 flex flex-col items-center relative z-10">
+      <div className="max-w-[1280px] mx-auto px-6 lg:px-2 flex flex-col items-center relative z-1">
         <h2 className="text-[52px] hidden lg:block spradesheet-usage-text-in-inventory-management leading-[62.4px] font-['Sequel_Sans'] font-normal text-brand-dark tracking-[-1.04px] mb-4">
           How it Works
         </h2>
@@ -48,7 +48,7 @@ export default function HowItWorks() {
               className="flex flex-col items-center lg:items-start text-center lg:text-left relative w-full max-w-[280px]"
             >
               {/* Step Number Circle */}
-              <div className="w-[60px] h-[60px] md:w-[72px] md:h-[72px] bg-[#0A0F0A] rounded-full flex items-center justify-center mb-6 z-10">
+              <div className="w-[60px] h-[60px] md:w-[72px] md:h-[72px] bg-[#0A0F0A] rounded-full flex items-center justify-center mb-6 z-1">
                 <span className="text-white how-it-works-number-text-in-inventory-management text-2xl md:text-[32px] font-['Sequel_Sans'] font-[420]">
                   {step.number}
                 </span>
