@@ -701,26 +701,25 @@ export default function Index() {
             {/* Desktop Menu */}
             <div className="hidden lg:flex items-center gap-4">
               {[
-                "Problem",
-                "Features",
-                "Why PeopleMS",
-                "How it works",
-                "For whom?",
-                "Pricing",
-              ].map((label) => (
+                { label: "Problem", id: "problem" },
+                { label: "Features", id: "features" },
+                { label: "Why PeopleMS", id: "why-peoplems" },
+                { label: "How it works", id: "how-it-works" },
+                { label: "For whom?", id: "for-whom" },
+                { label: "Pricing", id: "pricing" },
+              ].map((item) => (
                 <Link
-                  href={`#${label.toLowerCase()}`}
-                  key={label}
-                  type="button"
+                  href={`#${item.id}`}
+                  key={item.label}
+                  className="px-5 py-2.5 rounded-full nav-links-in-inventory-management bg-brand-gray text-brand-dark font-['Sequel_Sans'] text-base font-normal hover:bg-brand-gray/50 transition-colors"
                   onClick={(e) => {
                     e.preventDefault();
                     document
-                      .getElementById(label.toLowerCase())
+                      .getElementById(item.id)
                       ?.scrollIntoView({ behavior: "smooth" });
                   }}
-                  className="px-5 py-2.5 rounded-full nav-links-in-inventory-management bg-brand-gray text-brand-dark font-['Sequel_Sans'] text-base font-normal hover:bg-brand-gray/50 transition-colors"
                 >
-                  {label}
+                  {item.label}
                 </Link>
               ))}
             </div>
@@ -769,21 +768,21 @@ export default function Index() {
               </div>
               <div className="flex flex-col gap-4 p-4 mt-4">
                 {[
-                  "Solution",
-                  "Features",
-                  "Benefits",
-                  "Customers",
-                  "Pricing",
-                ].map((label, index, arr) => (
+                  { label: "Problem", id: "problem" },
+                  { label: "Features", id: "features" },
+                  { label: "Why PeopleMS", id: "why-peoplems" },
+                  { label: "How it works", id: "how-it-works" },
+                  { label: "For whom?", id: "for-whom" },
+                  { label: "Pricing", id: "pricing" },
+                ].map((item, index, arr) => (
                   <Link
-                    key={label}
-                    href={`#${label.toLowerCase()}`}
-                    type="button"
+                    key={item.label}
+                    href={`#${item.id}`}
                     onClick={(e) => {
                       e.preventDefault();
                       setMobileOpen(false);
                       document
-                        .getElementById(label.toLowerCase())
+                        .getElementById(item.id)
                         ?.scrollIntoView({ behavior: "smooth" });
                     }}
                     className={`w-full px-5 py-3 text-left font-['Sequel_Sans'] nav-links-in-inventory-management-get-in-touch text-base font-normal
@@ -795,7 +794,7 @@ export default function Index() {
         }
       `}
                   >
-                    {label}
+                    {item.label}
                   </Link>
                 ))}
 
@@ -935,7 +934,7 @@ export default function Index() {
 
       {/* Problem Section */}
       <section
-        id="solution"
+        id="problem"
         className="py-20 bg-[#FCFFF4] problem-section-parent-in-inventory-management"
       >
         <div className="max-w-7xl mx-auto px-16 problem-section-content-holder-in-inventory-management">
@@ -1105,7 +1104,10 @@ export default function Index() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-16 md:py-24 bg-[#FCFFF4] why-chose-people-ms-section">
+      <section
+        id="why-peoplems"
+        className="py-16 md:py-24 bg-[#FCFFF4] why-chose-people-ms-section"
+      >
         <div className="max-w-[1440px] mx-auto px-6 lg:px-18 why-chose-people-ms-container">
           <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-10 md:mb-16 gap-6 md:gap-8">
             <div className="max-w-[800px]">
@@ -1265,10 +1267,14 @@ export default function Index() {
       </section> */}
 
       {/* How it Works Section */}
-      <HowItWorks />
+      <div id="how-it-works">
+        <HowItWorks />
+      </div>
 
       {/* Who is PeopleMS For Section */}
-      <WhoIsPeopleMS />
+      <div id="for-whom">
+        <WhoIsPeopleMS />
+      </div>
 
       {/* Benefits Section */}
       {/* <section
@@ -1394,7 +1400,7 @@ export default function Index() {
       <TestimonialSlider />
 
       {/* Pricing Section */}
-      {/* <section
+      <section
         id="pricing"
         className="py-24 bg-[#FCFFF4] pricing-section-in-inventory-management pt-10 pb-50"
       >
@@ -1470,7 +1476,7 @@ export default function Index() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* CTA Section */}
       <section className="relative cta-section-in-inventory-management z-1 py-20 mx-16 mb-24 bg-[#FCFFF4] rounded-[32px] overflow-hidden  everything-you-need-text-in-inventory-management">

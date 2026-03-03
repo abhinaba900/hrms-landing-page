@@ -4,20 +4,21 @@ import { useRef, useState, useEffect, useCallback } from "react";
 
 /* ─── Data ──────────────────────────────────────────────────────────────── */
 const BASE_AUDIENCES = [
-  { label: "Startups", image: "/assets/who-is-people-ms.png" },
+  { label: "SMEs", image: "/assets/SMEs.webp" },
+  { label: "Startups", image: "/assets/Startups.webp" },
   {
-    label: "Remote teams",
-    image: "/assets/who-is-people-ms.png",
-  },
-  { label: "SMEs", image: "/assets/who-is-people-ms.png" },
-  {
-    label: "IT & software",
-    image: "/assets/who-is-people-ms.png",
+    label: "IT & software companies",
+    image: "/assets/IT & software companies.webp",
   },
   {
-    label: "Manufacturing",
-    image: "/assets/who-is-people-ms.png",
+    label: "Manufacturing companies",
+    image: "/assets/Manufacturing companies.webp",
   },
+  {
+    label: "Multi-location businesses",
+    image: "/assets/Multi-location businesses.webp",
+  },
+  { label: "Remote teams", image: "/assets/Remote teams.webp" },
 ];
 
 /* ─── Constants ──────────────────────────────────────────────────────────── */
