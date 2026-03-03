@@ -1009,7 +1009,7 @@ export default function Index() {
               <img
                 src="assets/no-visibility-ito-row-material-movement.webp"
                 alt="No Visibility"
-                className="w-[89px] h-[90px] mb-6"
+                className="w-[89px] h-[90px] mb-6 scale-[1.2]"
               />
               <h3 className="text-xl font-['Sequel_Sans'] font-normal text-brand-dark mb-3 leading-tight spradesheet-usage-card-title-text-in-inventory-management">
                 Attendance data isn’t reliable
@@ -1030,7 +1030,7 @@ export default function Index() {
               <img
                 src="assets/HR-buried-in-repetitive-queries.webp"
                 alt="No Visibility"
-                className="w-[89px] h-[90px] mb-6"
+                className="w-[89px] h-[90px] mb-6 scale-[1.2]"
               />
               <h3 className="text-xl font-['Sequel_Sans'] font-normal text-brand-dark mb-3 leading-tight spradesheet-usage-card-title-text-in-inventory-management">
                 HR buried in repetitive queries
@@ -1049,7 +1049,7 @@ export default function Index() {
               <img
                 src="assets/No-visibility-into-workforce-data.webp"
                 alt="No Visibility"
-                className="w-[89px] h-[90px] mb-6"
+                className="w-[89px] h-[90px] mb-6 scale-[1.2]"
               />
               <h3 className="text-xl font-['Sequel_Sans'] font-normal text-brand-dark mb-3 leading-tight spradesheet-usage-card-title-text-in-inventory-management">
                 No visibility into workforce data
