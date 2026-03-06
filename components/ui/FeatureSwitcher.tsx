@@ -1,15 +1,16 @@
 ﻿"use client";
 import { useState } from "react";
 
-export default function FeatureSwitcher({setOpen}: any) {
+export default function FeatureSwitcher({ setOpen }: any) {
   const [active, setActive] = useState(0);
 
   const images = [
-    "/assets/Raw Materials Tracking.webp",
-    "/assets/Production Monitoring.webp",
-    "/assets/Quality Control & Defect Tracking.webp",
-    "/assets/Vendor Management.webp",
-    "/assets/Smart Reports & Analytics.webp",
+    "/assets/Attendance Management.webp",
+    "/assets/Payroll Automation.webp",
+    "/assets/Leave Management.webp",
+    "/assets/AI HR Assistant.webp",
+    "/assets/Reports & Analytics.webp",
+    "/assets/Employee Benefits Management.webp",
   ];
 
   const items = [
@@ -19,23 +20,23 @@ export default function FeatureSwitcher({setOpen}: any) {
     },
     {
       title: "Payroll Automation",
-      desc: "Automate salary calculations, deductions, and payslip generation effortlessly.",
+      desc: "Automate salary calculations, taxes, and payslips without errors or last-minute stress.",
     },
     {
       title: "Leave Management",
-      desc: "Streamline leave requests, approvals, and balances with automated tracking.",
+      desc: "Manage leave policies, approvals, and balances with complete clarity.",
     },
     {
       title: "AI HR Assistant",
-      desc: "Get instant answers to HR questions, automate repetitive tasks, and improve employee experience with AI.",
+      desc: "Let employees get instant HR answers without depending on your HR team.",
     },
     {
       title: "Reports & Analytics",
-      desc: "Track key metrics, generate insights, and make data-driven decisions with comprehensive HR analytics.",
+      desc: "Get real-time HR insights to make faster, data-driven decisions.",
     },
     {
       title: "Employee Benefits Management",
-      desc: "Manage benefits, claims, and reimbursements efficiently with automated tracking and approvals.",
+      desc: "Track benefits, bonuses, and reimbursements in one organized system.",
     },
   ];
 
