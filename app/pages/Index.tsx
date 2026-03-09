@@ -1400,7 +1400,7 @@ export default function Index() {
       <TestimonialSlider />
 
       {/* Pricing Section */}
-      <section
+      {/* <section
         id="pricing"
         className="py-24 bg-[#FCFFF4] pricing-section-in-inventory-management pt-10 pb-50"
       >
@@ -1422,7 +1422,8 @@ export default function Index() {
                 Best for Small Teams
               </h3>
               <p className="text-xl font-['Sequel_Sans'] font-normal text-brand-dark leading-relaxed mb-8 plan-subheading-in-inventory-management">
-               Perfect for teams starting with HR automation, managing attendance, payroll, and core HR tasks with ease.
+                Perfect for teams starting with HR automation, managing
+                attendance, payroll, and core HR tasks with ease.
               </p>
 
               <button
@@ -1442,7 +1443,8 @@ export default function Index() {
                 Best for Growing Companies
               </h3>
               <p className="text-xl font-['Sequel_Sans'] font-normal text-brand-dark leading-relaxed mb-8 plan-subheading-in-inventory-management">
-                Perfect for teams scaling their operations, with advanced HR tools, analytics, and integrations.
+                Perfect for teams scaling their operations, with advanced HR
+                tools, analytics, and integrations.
               </p>
 
               <button
@@ -1461,7 +1463,8 @@ export default function Index() {
                 Best for Large Companies
               </h3>
               <p className="text-xl font-['Sequel_Sans'] font-normal text-brand-dark leading-relaxed mb-8 plan-subheading-in-inventory-management">
-                Perfect for large organizations with complex HR needs, offering full customization, user management, and dedicated support.
+                Perfect for large organizations with complex HR needs, offering
+                full customization, user management, and dedicated support.
               </p>
 
               <button
@@ -1473,7 +1476,7 @@ export default function Index() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="relative cta-section-in-inventory-management z-1 py-20 mx-16 mb-24 bg-[#FCFFF4] rounded-[32px] overflow-hidden  everything-you-need-text-in-inventory-management">

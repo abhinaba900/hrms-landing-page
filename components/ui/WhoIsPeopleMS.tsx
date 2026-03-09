@@ -202,7 +202,7 @@ export default function WhoIsPeopleMS() {
 
   /* ─────────────────────────────────────────────────────────────────────── */
   return (
-    <section className="py-16 md:py-24 pb-0 md:pb-0 bg-[#FCFFF4] overflow-hidden who-is-peoplems-for-section">
+    <section className="py-24 pb-0 bg-[#FCFFF4] overflow-hidden who-is-peoplems-for-section">
       <div className="max-w-[1312px] mx-auto px-6 lg:px-16 mb-10 md:mb-14">
         <div className="flex flex-col items-center text-center">
           <div className="relative inline-block">

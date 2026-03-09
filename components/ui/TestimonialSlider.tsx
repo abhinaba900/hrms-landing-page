@@ -16,7 +16,6 @@ interface TestimonialItem {
 }
 
 const testimonials: TestimonialItem[] = [
-  
   {
     id: 2,
     message:
@@ -63,12 +62,15 @@ export default function TestimonialSlider() {
   return (
     <section className="py-16 md:py-24 bg-[#FCFFF4] overflow-hidden">
       <div className="max-w-[1312px] mx-auto px-6 lg:px-16">
-        <div className="flex flex-col items-center text-center mb-10 md:mb-16">
-          <h2 className="text-3xl md:text-[52px] md:leading-[62.4px] center-align-text spradesheet-usage-text-in-inventory-management font-['Sequel_Sans'] font-normal text-brand-dark tracking-[-1.04px] mb-8 md:mb-12">
+        <div className="flex flex-col items-center justify-between h-full text-center mb-[24px]">
+          <h2
+            className="center-align-text spradesheet-usage-text-in-inventory-management font-normal text-brand-dark"
+            style={{ marginBottom: "80px" }}
+          >
             Trusted by teams that <br className="hidden md:block" /> rely on us
           </h2>
 
-          <div className="text-brand-purple mb-8">
+          <div className="text-brand-purple">
             <img src="/assets/quoma.png" alt="quoma" />
           </div>
         </div>
@@ -76,14 +78,22 @@ export default function TestimonialSlider() {
         <div className="relative max-w-4xl mx-auto px-16">
           <Slider ref={sliderRef} {...settings}>
             {testimonials.map((item) => (
-              <div key={item.id}>
+              <div key={item.id} style={{ padding: "0 12px" }}>
+                {/* 24px slide gap: 12px padding on each side */}
                 <div className="flex flex-col items-center text-center">
-                  <p className="text-[28px] leading-[140%] testimonial-slider-text-in-inventory-management font-['Sequel_Sans'] font-normal text-brand-dark mb-10 transformes-how-we-manage-production-subheader-in-inventory-management">
-                    “{item.message}”
+                  <p
+                    className="transformes-how-we-manage-production-subheader-in-inventory-management text-brand-dark"
+                    style={{
+                      marginBottom: "32px",
+                      fontSize: "28px",
+                      lineHeight: "140%",
+                    }}
+                  >
+                    "{item.message}"
                   </p>
 
-                  <div className="mb-4">
-                    <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-yellow-400">
+                  <div style={{ marginBottom: "10px" }}>
+                    <div className="w-16 h-16 rounded-full overflow-hidden border-4 border-yellow-400">
                       <img
                         src={item.avatar}
                         alt={item.author}
@@ -96,7 +106,7 @@ export default function TestimonialSlider() {
                     </div>
                   </div>
 
-                  <p className="text-lg font-['Sequel_Sans'] text-brand-dark testimonial-slider-author-in-inventory-management slider-subheader-in-inventory-management">
+                  <p className="text-brand-dark slider-subheader-in-inventory-management">
                     - {item.author}, {item.role} @ {item.company}
                   </p>
                 </div>

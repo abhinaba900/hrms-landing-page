@@ -433,12 +433,12 @@ rect {
 
 /* 🔥 HOVER EFFECT */
 .social-icon-hover:hover {
-  color: #8b4dff; /* Purple text */
+  color: #5048e5; /* Purple text */
 }
 
 .social-icon-hover:hover svg rect {
-  stroke: #8b4dff; /* Purple border */
-  fill: #8b4dff; /* Purple background */
+  stroke: #5048e5; /* Purple border */
+  fill: #5048e5; /* Purple background */
 }
 
 .social-icon-hover:hover svg path {
