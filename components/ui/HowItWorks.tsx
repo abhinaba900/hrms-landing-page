@@ -37,9 +37,9 @@ export default function HowItWorks() {
         <h2 className="text-3xl md:text-[52px] spradesheet-usage-text-in-inventory-management leading-[1.2] font-['Sequel_Sans'] font-normal text-brand-dark tracking-[-1.04px] mb-4 text-center">
           How it Works
         </h2>
-        <p className="text-lg md:text-[20px] video-section-subtext-text-in-inventory-management font-['Sequel_Sans'] font-[405] text-brand-dark text-center mb-12 md:mb-20 tracking-wide">
+        <span className="text-lg md:text-[20px] video-section-subtext-text-in-inventory-management  text-center mb-12 md:mb-20 ">
           Simple. Fast. Powerful.
-        </p>
+        </span>
 
         <div className="w-full flex flex-col lg:flex-row items-center lg:items-start justify-between gap-12 lg:gap-4 relative">
           {steps.map((step, index) => (

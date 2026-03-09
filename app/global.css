@@ -182,11 +182,11 @@ rect {
 
     --sidebar-ring: 217.2 91.2% 59.8%;
     --font-family-sequel-sans-book: "Sequel Sans Book", sans-serif;
-    --font-family-sequel-sans-book-display: "Sequel Sans Book Display";
+    --font-family-sequel-sans-book-display: "Sequel Sans Book Display", sans-serif;
     --font-family-sequel-sans-medium: "Sequel Sans Medium", sans-serif;
-    --font-family-sequel-sans-random-display: "Sequel Sans Random Display";
-    --font-family-sequel-sans-roman-display: "Sequel Sans Roman Display";
-    --font-family-sequel-sans-light-display: "Sequel Sans Light Display";
+    --font-family-sequel-sans-random-display: "Sequel Sans Random Display", sans-serif;
+    --font-family-sequel-sans-roman-display: "Sequel Sans Roman Display", sans-serif;
+    --font-family-sequel-sans-light-display: "Sequel Sans Light Display", sans-serif;
     --font-family-sequel-sans-bold-head: "Sequel Sans Bold Head", sans-serif;
     --font-family-sequel-sans-book-head: "Sequel Sans Book Head", sans-serif;
     --font-family-sequel-sans-medium-head:
@@ -923,6 +923,13 @@ rect {
   letter-spacing: -2%;
   text-align: center;
 }
+
+.video-section-subtext-text-in-inventory-management {
+    font-size: 1.25rem;
+    line-height: 140%;
+    font-family: var(--font-family-sequel-sans-book-display) !important;
+    font-weight: 405 !important;
+  }
 
 @media (max-width: 767px) {
   .heading-section-title-in-inventory-management {

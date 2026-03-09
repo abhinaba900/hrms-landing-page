@@ -348,42 +348,15 @@ export default function Index() {
                     />
                   </div>
                   <h1 className="text-3xl ready-to-automate-your-factory-heading md:text-4xl lg:text-[52px] font-[420] leading-[120%] tracking-[-0.02em] text-brand-text text-center mb-8 md:mb-12 lg:mb-[5rem]">
-                    Ready to Automate <br /> Your Factory?
+                    Ready to Automate <br /> Your HR?
                   </h1>
 
                   <div className=" hidden lg:block">
-                    <svg
-                      width="47"
-                      height="45"
-                      viewBox="0 0 57 55"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g clipPath="url(#clip0_117_1359)">
-                        <path
-                          d="M23.7817 45.3332C23.6997 46.5596 26.5012 46.6664 35.7184 45.8266C45.4748 44.9311 47.5952 44.3762 47.1893 42.96C46.6073 41.0192 23.9651 43.3531 23.7817 45.3332Z"
-                          fill="#EC4B7B"
-                        />
-                        <path
-                          d="M16.3162 2.60838C12.66 2.62667 12.1928 3.25857 9.84483 11.3322C7.41106 19.6685 7.26189 21.2782 8.77934 21.8652C11.5352 22.9181 12.884 20.9178 16.4063 10.7572C19.0006 3.25944 19.0149 2.59484 16.3162 2.60838Z"
-                          fill="#EC4B7B"
-                        />
-                        <path
-                          d="M36.6279 15.0366C34.0012 15.0166 33.0466 15.5477 29.9626 18.7012C20.8497 28.0908 13.6019 34.0711 18.7158 34.0067C20.8032 33.9947 22.6758 32.4249 33.6972 21.798C39.7624 15.8945 40.142 15.0865 36.6279 15.0366Z"
-                          fill="#EC4B7B"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_117_1359">
-                          <rect
-                            width="47.1837"
-                            height="44.6812"
-                            fill="white"
-                            transform="translate(10.5689) rotate(13.6824)"
-                          />
-                        </clipPath>
-                      </defs>
-                    </svg>
+                    <img
+                      src="assets/still-using-spradesheets-3-section-icon.svg"
+                      alt=" section icon"
+                      className="w-[47px] h-[47px]"
+                    />
                   </div>
                 </div>
 
