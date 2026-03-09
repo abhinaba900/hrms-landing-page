@@ -1723,7 +1723,7 @@ export default function Index() {
 
           <div className="border-t border-brand-dark/10 pt-8 footer-copyright-in-inventory-management">
             <p className="text-sm font-['Sequel_Sans'] font-normal text-brand-dark/80 text-center copyright-text-in-inventory-management">
-              Copyright © 2025 Third Eye. All rights reserved.
+              Copyright © 2026 Third Eye. All rights reserved.
             </p>
           </div>
         </div>
