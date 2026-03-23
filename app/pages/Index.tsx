@@ -187,19 +187,19 @@ export default function Index() {
   const images: partner[] = [
     {
       name: "Brand 1",
-      logo: "assets/brand-image1.webp",
+      logo: "https://thirdeyesite.b-cdn.net/people-ms/brand-image1.webp",
     },
     {
       name: "Brand 2",
-      logo: "assets/brand-image-2.webp",
+      logo: "https://thirdeyesite.b-cdn.net/people-ms/brand-image-2.webp",
     },
     {
       name: "Brand 3",
-      logo: "assets/brand-image-3.webp",
+      logo: "https://thirdeyesite.b-cdn.net/people-ms/brand-image-3.webp",
     },
     {
       name: "Brand 4",
-      logo: "assets/brand-image-4.webp",
+      logo: "https://thirdeyesite.b-cdn.net/people-ms/brand-image-4.webp",
     },
   ];
 
@@ -317,7 +317,7 @@ export default function Index() {
                 }}
               >
                 {/* <img
-                  src="assets/close-icon-in-popup.svg"
+                  src="https://thirdeyesite.b-cdn.net/people-ms/close-icon-in-popup.svg"
                   className="cursor-pointer"
                   alt=""
                 /> */}
@@ -342,7 +342,7 @@ export default function Index() {
                 <div className="flex justify-center  relative popup-heading-container-in-inventory-management">
                   <div className="absolute left-6 -top-2 hidden md:block">
                     <img
-                      src="assets/ready-to-automate-your-factory-right-logo.webp"
+                      src="https://thirdeyesite.b-cdn.net/people-ms/ready-to-automate-your-factory-right-logo.webp"
                       alt="Robot illustration"
                       className="w-32 lg:w-[181px] h-auto transform -rotate-[10deg]"
                     />
@@ -353,7 +353,7 @@ export default function Index() {
 
                   <div className=" hidden lg:block">
                     <img
-                      src="assets/still-using-spradesheets-3-section-icon.svg"
+                      src="https://thirdeyesite.b-cdn.net/people-ms/still-using-spradesheets-3-section-icon.svg"
                       alt=" section icon"
                       className="w-[47px] h-[47px]"
                     />
@@ -365,7 +365,7 @@ export default function Index() {
                     <div className="flex items-start gap-4 popup-section-left-content-item-in-inventory-management border-b border-[rgba(10,15,10,0.1)]">
                       <div className="flex-shrink-0 w-10 h-10 md:w-[42px] md:h-[42px] rounded-full bg-brand-purple flex items-center justify-center">
                         <img
-                          src="assets/reach-out-to-us-popup-icon.svg"
+                          src="https://thirdeyesite.b-cdn.net/people-ms/reach-out-to-us-popup-icon.svg"
                           className="-mb-4"
                           alt=""
                         />
@@ -385,7 +385,7 @@ export default function Index() {
                     <div className="flex items-start gap-4 popup-section-left-content-item-in-inventory-management border-b border-[rgba(10,15,10,0.1)]">
                       <div className="flex-shrink-0 w-10 h-10 md:w-[42px] md:h-[42px] rounded-full bg-brand-purple flex items-center justify-center">
                         <img
-                          src="assets/email-with-us-popup-icon.svg"
+                          src="https://thirdeyesite.b-cdn.net/people-ms/email-with-us-popup-icon.svg"
                           className="-mb-4"
                           alt=""
                         />
@@ -405,7 +405,7 @@ export default function Index() {
                     <div className="flex items-start gap-4">
                       <div className="flex-shrink-0 w-10 h-10 md:w-[42px] md:h-[42px] rounded-full bg-brand-purple flex items-center justify-center">
                         <img
-                          src="assets/our-office-popup-icon.svg"
+                          src="https://thirdeyesite.b-cdn.net/people-ms/our-office-popup-icon.svg"
                           className="-mb-4"
                           alt=""
                         />
@@ -427,7 +427,7 @@ export default function Index() {
                     {isSubmitted ? (
                       <div className="flex flex-col justify-center items-center w-full h-full">
                         <img
-                          src="assets/after-submit-the-form-icon.svg"
+                          src="https://thirdeyesite.b-cdn.net/people-ms/after-submit-the-form-icon.svg"
                           alt="after submit logo"
                           className="mb-[28px]"
                         />
@@ -666,7 +666,7 @@ export default function Index() {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <img
-              src="/assets/main-logo-navbar.webp"
+              src="https://thirdeyesite.b-cdn.net/people-ms/main-logo-navbar.webp"
               alt="Third Eye Logo"
               className="h-[50px] w-[150px] lg:h-[60px] lg:w-[173px]"
             />
@@ -723,7 +723,7 @@ export default function Index() {
             >
               <div className="flex justify-between items-center px-4 pt-[44px]">
                 <img
-                  src="/assets/main-logo-navbar.webp"
+                  src="https://thirdeyesite.b-cdn.net/people-ms/main-logo-navbar.webp"
                   alt="Third Eye Logo"
                   className="h-[50px] w-[150px] lg:h-[60px] lg:w-[173px]"
                 />
@@ -733,7 +733,7 @@ export default function Index() {
                   onClick={() => setMobileOpen(false)}
                 >
                   <img
-                    src="assets/close-icon-in-popup.svg"
+                    src="https://thirdeyesite.b-cdn.net/people-ms/close-icon-in-popup.svg"
                     className="cursor-pointer"
                     alt=""
                   />
@@ -864,7 +864,7 @@ export default function Index() {
           {/* Dashboard Image */}
           <div className="relative max-w-[1112px] mx-auto">
             <img
-              src="/assets/Dashboard.png"
+              src="https://thirdeyesite.b-cdn.net/people-ms/Dashboard.png"
               alt="Dashboard Preview"
               className="w-full "
             />
@@ -929,7 +929,7 @@ export default function Index() {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 justify-center items-center relative problem-section-cards-holder-in-inventory-management">
             <img
-              src="assets/still-using-spradesheets-3-section-icon.svg"
+              src="https://thirdeyesite.b-cdn.net/people-ms/still-using-spradesheets-3-section-icon.svg"
               className="absolute -right-[4rem] -top-[4rem] in-mobile-not-visible"
               alt=""
             />
@@ -940,7 +940,7 @@ export default function Index() {
               }}
             >
               <img
-                src="assets/missed-reorders-cause-production-delays.webp"
+                src="https://thirdeyesite.b-cdn.net/people-ms/missed-reorders-cause-production-delays.webp"
                 alt="Production Delays"
                 className="w-[100px] h-[89px] mb-6"
               />
@@ -960,7 +960,7 @@ export default function Index() {
               }}
             >
               <img
-                src="assets/manual-stock-traking-leads-to-costly-errors.webp"
+                src="https://thirdeyesite.b-cdn.net/people-ms/manual-stock-traking-leads-to-costly-errors.webp"
                 alt="Costly Errors"
                 className="w-[88px] h-[88px] mb-6"
               />
@@ -980,7 +980,7 @@ export default function Index() {
               }}
             >
               <img
-                src="assets/no-visibility-ito-row-material-movement.webp"
+                src="https://thirdeyesite.b-cdn.net/people-ms/no-visibility-ito-row-material-movement.webp"
                 alt="No Visibility"
                 className="w-[89px] h-[90px] mb-6 scale-[1.2]"
               />
@@ -1001,7 +1001,7 @@ export default function Index() {
               }}
             >
               <img
-                src="assets/HR-buried-in-repetitive-queries.webp"
+                src="https://thirdeyesite.b-cdn.net/people-ms/HR-buried-in-repetitive-queries.webp"
                 alt="No Visibility"
                 className="w-[89px] h-[90px] mb-6 scale-[1.2]"
               />
@@ -1020,7 +1020,7 @@ export default function Index() {
               }}
             >
               <img
-                src="assets/No-visibility-into-workforce-data.webp"
+                src="https://thirdeyesite.b-cdn.net/people-ms/No-visibility-into-workforce-data.webp"
                 alt="No Visibility"
                 className="w-[89px] h-[90px] mb-6 scale-[1.2]"
               />
@@ -1067,7 +1067,7 @@ export default function Index() {
             </h2>
             <img
               className="absolute -bottom-[2.5rem] right-[12rem] in-mobile-not-visible"
-              src="assets/everything-you-need-to-run-section-area.svg"
+              src="https://thirdeyesite.b-cdn.net/people-ms/everything-you-need-to-run-section-area.svg"
               alt="everything-you-need-to-run-section-area"
             />
           </div>
@@ -1106,37 +1106,37 @@ export default function Index() {
             <div className="flex flex-col lg:flex-row w-full bg-[#000000] lg:pt-[1.5px] gap-[1px] lg:gap-[2px]">
               {[
                 {
-                  icon: "/assets/99.9-Uptime.webp",
+                  icon: "https://thirdeyesite.b-cdn.net/people-ms/99.9-Uptime.webp",
                   title: "99.9%\nUptime",
                   subtext:
                     "Enterprise-grade cloud infrastructure ensures your HR data is always available and protected.",
                 },
                 {
-                  icon: "/assets/3-Level-Role-System.webp",
+                  icon: "https://thirdeyesite.b-cdn.net/people-ms/3-Level-Role-System.webp",
                   title: "3-Level\nRole System",
                   subtext:
                     "Admins, HR teams, and employees get clearly defined, permission-based access.",
                 },
                 {
-                  icon: "/assets/40-fewer-HR-Tasks.webp",
+                  icon: "https://thirdeyesite.b-cdn.net/people-ms/40-fewer-HR-Tasks.webp",
                   title: "40% fewer\nHR Tasks",
                   subtext:
                     "Automation and AI-powered queries free HR teams from repetitive manual tasks.",
                 },
                 {
-                  icon: "/assets/10x-Team-Growth-Ready.webp",
+                  icon: "https://thirdeyesite.b-cdn.net/people-ms/10x-Team-Growth-Ready.webp",
                   title: "10x Team\nGrowth Ready",
                   subtext:
                     "PeopleMS adapts as your workforce expands - without changing systems or workflows.",
                 },
                 {
-                  icon: "/assets/go-Live-in-Hours.webp",
+                  icon: "https://thirdeyesite.b-cdn.net/people-ms/go-Live-in-Hours.webp",
                   title: "Go Live in\nHours",
                   subtext:
                     "Set up your organization, add employees, and start running HR without long implementation cycles.",
                 },
                 {
-                  icon: "/assets/100-Mobile-Ready.webp",
+                  icon: "https://thirdeyesite.b-cdn.net/people-ms/100-Mobile-Ready.webp",
                   title: "100%\nMobile-Ready",
                   subtext:
                     "Manage attendance, leave, and approvals seamlessly from any device.",
@@ -1204,7 +1204,7 @@ export default function Index() {
 
           <div className="relative max-w-[1110px] mx-auto">
             <img
-              src="assets/see-how-it-works-section-icon.svg"
+              src="https://thirdeyesite.b-cdn.net/people-ms/see-how-it-works-section-icon.svg"
               className="absolute -top-6 -right-[9rem] in-mobile-not-visible w-[120px] h-[120px] desktop-hide-in-small-desktop"
               alt=""
             />
@@ -1217,7 +1217,7 @@ export default function Index() {
               </div>
               <div className="relative aspect-video bg-gray-100">
                 <img
-                  src="assets/see-how-it-works-main-image.webp"
+                  src="https://thirdeyesite.b-cdn.net/people-ms/see-how-it-works-main-image.webp"
                   alt="Video Thumbnail"
                   className="w-full h-full object-cover"
                 />
@@ -1256,7 +1256,7 @@ export default function Index() {
       >
         <div className="relative z-1 max-w-7xl mx-auto px-16  benefits-section-content-holder-in-inventory-management">
           <img
-            src="assets/why-manufacturers-love-us-love-icon.svg"
+            src="https://thirdeyesite.b-cdn.net/people-ms/why-manufacturers-love-us-love-icon.svg"
             className="absolute -top-6 right-[20%] w-[70px] h-[70px] in-mobile-not-visible love-icon-in-why-manufacturers-love-us-in-inventory-management"
             alt=""
           />
@@ -1272,7 +1272,7 @@ export default function Index() {
               }}
             >
               <img
-                src="assets/24x7-access-icon.webp"
+                src="https://thirdeyesite.b-cdn.net/people-ms/24x7-access-icon.webp"
                 alt="24/7 Access"
                 className="w-[100px] h-[102px] mb-6 benifits-icon-in-inventory-management"
               />
@@ -1292,7 +1292,7 @@ export default function Index() {
               }}
             >
               <img
-                src="assets/customizable-workflows-icon.webp"
+                src="https://thirdeyesite.b-cdn.net/people-ms/customizable-workflows-icon.webp"
                 alt="Customizable Workflows"
                 className="w-[92px] h-[102px] mb-6 benifits-icon-in-inventory-management"
               />
@@ -1314,7 +1314,7 @@ export default function Index() {
               }}
             >
               <img
-                src="assets/actionaable-insights-icon.webp"
+                src="https://thirdeyesite.b-cdn.net/people-ms/actionaable-insights-icon.webp"
                 alt="Actionable Insights"
                 className="w-[113px] h-[102px] mb-6 benifits-icon-in-inventory-management"
               />
@@ -1333,7 +1333,7 @@ export default function Index() {
               }}
             >
               <img
-                src="assets/seamless-integraations-icon.webp"
+                src="https://thirdeyesite.b-cdn.net/people-ms/seamless-integraations-icon.webp"
                 alt="Seamless Integrations"
                 className="w-[94px] h-[98px] mb-6 benifits-icon-in-inventory-management"
               />
@@ -1353,7 +1353,7 @@ export default function Index() {
               }}
             >
               <img
-                src="assets/instent-alert-icon.webp"
+                src="https://thirdeyesite.b-cdn.net/people-ms/instent-alert-icon.webp"
                 alt="Instant Alerts"
                 className="w-[95px] h-[102px] mb-6 benifits-icon-in-inventory-management"
               />
@@ -1454,7 +1454,7 @@ export default function Index() {
       {/* CTA Section */}
       <section className="relative cta-section-in-inventory-management z-1 py-20 mx-16 mb-24 bg-[#FCFFF4] rounded-[32px] overflow-hidden  everything-you-need-text-in-inventory-management">
         <img
-          src="assets/ready-to-take-control-of-your-inventory-left-icon.svg"
+          src="https://thirdeyesite.b-cdn.net/people-ms/ready-to-take-control-of-your-inventory-left-icon.svg"
           className="absolute top-0 in-mobile-not-visible"
           alt=""
         />
@@ -1467,7 +1467,7 @@ export default function Index() {
             intelligently.
           </p>
           <img
-            src="assets/ready-to-take-control-of-your-inventory-right-logo.svg"
+            src="https://thirdeyesite.b-cdn.net/people-ms/ready-to-take-control-of-your-inventory-right-logo.svg"
             className="absolute top-[50%] -right-[5rem] in-mobile-not-visible"
             alt=""
           />
@@ -1532,7 +1532,7 @@ export default function Index() {
                 <NextImage
                   width={239}
                   height={123}
-                  src="/assets/footer-thired-eye-logo.png"
+                  src="https://thirdeyesite.b-cdn.net/people-ms/footer-thired-eye-logo.png"
                   alt="Third Eye Logo"
                   className="w-[239px] h-[123px] "
                 />

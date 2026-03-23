@@ -4,21 +4,21 @@ import { useRef, useState, useEffect, useCallback } from "react";
 
 /* ─── Data ──────────────────────────────────────────────────────────────── */
 const BASE_AUDIENCES = [
-  { label: "SMEs", image: "/assets/SMEs.webp" },
-  { label: "Startups", image: "/assets/Startups.webp" },
+  { label: "SMEs", image: "https://thirdeyesite.b-cdn.net/people-ms/SMEs.webp" },
+  { label: "Startups", image: "https://thirdeyesite.b-cdn.net/people-ms/Startups.webp" },
   {
     label: "IT & software companies",
-    image: "/assets/IT & software companies.webp",
+    image: "https://thirdeyesite.b-cdn.net/people-ms/IT%20%26%20software%20companies.webp",
   },
   {
     label: "Manufacturing companies",
-    image: "/assets/Manufacturing companies.webp",
+    image: "https://thirdeyesite.b-cdn.net/people-ms/Manufacturing%20companies.webp",
   },
   {
     label: "Multi-location businesses",
-    image: "/assets/Multi-location businesses.webp",
+    image: "https://thirdeyesite.b-cdn.net/people-ms/Multi-location%20businesses.webp",
   },
-  { label: "Remote teams", image: "/assets/Remote teams.webp" },
+  { label: "Remote teams", image: "https://thirdeyesite.b-cdn.net/people-ms/Remote%20teams.webp" },
 ];
 
 /* ─── Constants ──────────────────────────────────────────────────────────── */
@@ -207,7 +207,7 @@ export default function WhoIsPeopleMS() {
         <div className="flex flex-col items-center text-center">
           <div className="relative inline-block">
             <img
-              src="/assets/who-is-people-ms-for-heading-right-top-image.png"
+              src="https://thirdeyesite.b-cdn.net/people-ms/who-is-people-ms-for-heading-right-top-image.png"
               alt="Crown"
               className="absolute -top-6 md:-top-10 -right-16 md:-right-24 w-16 md:w-[100px] h-auto pointer-events-none"
             />

@@ -22,8 +22,8 @@ const testimonials: TestimonialItem[] = [
       "We reduced stock wastage by 40% with Third Eye's inventory tool. The live tracking system gave us complete control over raw materials and production flow — we've never been this efficient.",
     author: "Operations Head",
     company: "Space Luggage",
-    image: "assets/space-luggage-main-image.webp",
-    logo: "assets/space-luggage-icon.webp",
+    image: "https://thirdeyesite.b-cdn.net/people-ms/space-luggage-main-image.webp",
+    logo: "https://thirdeyesite.b-cdn.net/people-ms/space-luggage-icon.webp",
   },
   {
     id: 2,
@@ -32,8 +32,8 @@ const testimonials: TestimonialItem[] = [
       "Managing multiple shades and finishes was complex. Third Eye Creative gave us real-time stock visibility and automated alerts now production is faster and far more accurate.",
     author: "Operations Head",
     company: "Banna Spray Paints",
-    image: "assets/space-luggage-main-image.webp",
-    logo: "assets/brand-image1.webp",
+    image: "https://thirdeyesite.b-cdn.net/people-ms/space-luggage-main-image.webp",
+    logo: "https://thirdeyesite.b-cdn.net/people-ms/brand-image1.webp",
   },
  
 ];

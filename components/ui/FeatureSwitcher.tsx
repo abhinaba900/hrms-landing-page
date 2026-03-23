@@ -5,12 +5,12 @@ export default function FeatureSwitcher({ setOpen }: any) {
   const [active, setActive] = useState(0);
 
   const images = [
-    "/assets/Attendance Management.webp",
-    "/assets/Payroll Automation.webp",
-    "/assets/Leave Management.webp",
-    "/assets/AI HR Assistant.webp",
-    "/assets/Reports & Analytics.webp",
-    "/assets/Employee Benefits Management.webp",
+    "https://thirdeyesite.b-cdn.net/people-ms/Attendance%20Management.webp",
+    "https://thirdeyesite.b-cdn.net/people-ms/Payroll%20Automation.webp",
+    "https://thirdeyesite.b-cdn.net/people-ms/Leave%20Management.webp",
+    "https://thirdeyesite.b-cdn.net/people-ms/AI%20HR%20Assistant.webp",
+    "https://thirdeyesite.b-cdn.net/people-ms/Reports%20%26%20Analytics.webp",
+    "https://thirdeyesite.b-cdn.net/people-ms/Employee%20Benefits%20Management.webp",
   ];
 
   const items = [

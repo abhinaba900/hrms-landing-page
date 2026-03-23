@@ -23,7 +23,7 @@ const testimonials: TestimonialItem[] = [
     author: "Dr. Mahesh",
     role: "CEO",
     company: "SathyaSai Hospital",
-    avatar: "/assets/Dr Mahesh - SSH.webp",
+    avatar: "https://thirdeyesite.b-cdn.net/people-ms/Dr%20Mahesh%20-%20SSH.webp",
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ const testimonials: TestimonialItem[] = [
     author: "Nagadri",
     role: "Founder",
     company: "Zero and One",
-    avatar: "/assets/Zero and one - image.webp",
+    avatar: "https://thirdeyesite.b-cdn.net/people-ms/Zero%20and%20one%20-%20image.webp",
   },
   {
     id: 4,
@@ -41,7 +41,7 @@ const testimonials: TestimonialItem[] = [
     author: "Amogh",
     role: "CEO",
     company: "Banna Sprays",
-    avatar: "/assets/Amogh - banna sprays.webp",
+    avatar: "https://thirdeyesite.b-cdn.net/people-ms/Amogh%20-%20banna%20sprays.webp",
   },
 ];
 
@@ -71,7 +71,7 @@ export default function TestimonialSlider() {
           </h2>
 
           <div className="text-brand-purple">
-            <img src="/assets/quoma.png" alt="quoma" />
+            <img src="https://thirdeyesite.b-cdn.net/people-ms/quoma.png" alt="quoma" />
           </div>
         </div>
 
