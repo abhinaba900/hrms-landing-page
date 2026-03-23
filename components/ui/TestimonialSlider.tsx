@@ -100,7 +100,7 @@ export default function TestimonialSlider() {
                         className="w-full h-full object-cover"
                         onError={(e) => {
                           e.currentTarget.src =
-                            "/assets/who-is-people-ms-for-manufacturing.jpg"; // fallback
+                            "https://thirdeyesite.b-cdn.net/people-ms/who-is-people-ms-for-manufacturing.jpg"; // fallback
                         }}
                       />
                     </div>
